@@ -1,19 +1,20 @@
-FindIt - Search Hidden Objects asset provenance
+Find It - Search Hidden Objects asset provenance
 
 The in-app vector glyphs, vector brand illustrations, classic scene backgrounds, synthesized audio,
 fonts, and 57 classic hidden-object compositions are reused from the local
-FindIt project at E:\Google Apps\Find It. The original project is not modified.
+Find It project at E:\Google Apps\Find It. The original project is not modified.
 verification/source-reuse.json records copied paths and original SHA-256 hashes.
 
 The Android launcher/splash, web icons/splash, and Play listing icon now use the
-publisher-supplied green magnifying-glass/star/leaf PNG, not the original app's
+publisher-supplied green magnifying-glass and golden-leaf PNG, not the original app's
 launcher artwork. The untouched original is assets/branding/icon_source.png:
-SHA-256 a861fa79eacf1ba4f31601d54d4b37384b4a3c8827b55b4e1beaa1aff2e668e1.
+SHA-256 1b5d868fbced8eada2be4b5af5383edfeefbc611b3e92cf34e8fec1b4b096521.
 verification/branding/icon-source.json records its dimensions and import provenance.
 tool/prepare_branding_test.dart generates the color assets and padded Android
-safe-zone foregrounds; it preserves enclosed highlights while removing only
-edge-connected background for adaptive/splash assets. The Android themed icon
-uses a simplified magnifier/star/leaf silhouette. verification/branding/manifest.json
+safe-zone foregrounds; it preserves the original colors and proportions and
+excludes only fully transparent outer margins. The Android themed icon is derived
+from the supplied rim, handle, leaf and hills, without an alternate logo drawing.
+verification/branding/manifest.json
 records every generated file, checksum, dimension, and adaptive safe-zone check.
 The supplied image's creation method, ownership, and distribution rights were
 not independently established. The publisher must approve these before release.
@@ -33,7 +34,7 @@ Dependencies may have their own licenses; Flutter's license registry is accessib
 from Settings > About > Open-source licenses.
 
 This provenance record is not a legal opinion or an exclusivity/trademark claim.
-Before distribution, review the FindIt name, artwork quality, source provenance,
+Before distribution, review the Find It name, artwork quality, source provenance,
 and rights with the publisher. This app uses colorful illustrated vector art,
 not photography or photorealistic imagery. No external art service was used to
 generate the scene PNGs or prepare the supplied icon in this project.

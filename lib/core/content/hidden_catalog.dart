@@ -2,7 +2,7 @@ import '../domain/puzzle.dart';
 import 'featured_scenes.dart';
 import 'puzzle_generator.dart';
 
-/// Reuses FindIt's 60 hidden-object levels, replacing the first three
+/// Reuses Find It's 60 hidden-object levels, replacing the first three
 /// compositions with richer, deliberately placed illustrated scenes.
 abstract final class HiddenCatalog {
   static const levelCount = 60;

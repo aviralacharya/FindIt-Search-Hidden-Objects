@@ -17,7 +17,7 @@ class AboutScreen extends StatelessWidget {
         onPressed: () => context.go('/settings'),
         icon: const Icon(Icons.arrow_back_rounded),
       ),
-      title: const Text('About FindIt'),
+      title: const Text('About ${AppConfig.name}'),
     ),
     body: PageContent(
       maxWidth: 740,
@@ -46,7 +46,7 @@ class AboutScreen extends StatelessWidget {
           const SizedBox(height: 28),
           const SoftCard(
             child: Text(
-              'FindIt turns a few quiet moments into a colorful hidden-object adventure. Explore cozy rooms, peaceful gardens, and charming cafés across 60 offline levels.\n\nPlay at your own pace, try a Daily Challenge, and collect stars and rewards. No ads, sign-up, or in-app purchases. Your progress stays on your device.',
+              '${AppConfig.name} turns a few quiet moments into a colorful hidden-object adventure. Explore cozy rooms, peaceful gardens, and charming cafés across 60 offline levels.\n\nPlay at your own pace, try a Daily Challenge, and collect stars and rewards. No ads, sign-up, or in-app purchases. Your progress stays on your device.',
             ),
           ),
           const SizedBox(height: 20),

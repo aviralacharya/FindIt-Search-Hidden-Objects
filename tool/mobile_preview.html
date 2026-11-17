@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Find It · Mobile browser preview</title>
+  <link rel="icon" href="/favicon.png" type="image/png">
+  <style>
+    :root { color-scheme: light; font-family: system-ui, sans-serif; color: #183c32; background: #eef1e8; }
+    * { box-sizing: border-box; }
+    body { margin: 0; padding: 24px; }
+    header { max-width: 900px; margin: 0 auto 20px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; }
+    h1 { margin: 0 0 4px; font-size: 22px; }
+    p { margin: 0; color: #53675e; font-size: 13px; line-height: 1.5; }
+    .controls { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+    select, button, a { font: inherit; font-size: 13px; color: #183c32; background: #fbf7ee; border: 1px solid #c9d3c2; border-radius: 10px; padding: 9px 12px; }
+    button, a { cursor: pointer; }
+    a { text-decoration: none; }
+    :focus-visible { outline: 3px solid #b88937; outline-offset: 3px; }
+    main { display: grid; justify-items: center; gap: 14px; }
+    #stage { position: relative; }
+    #phone { transform-origin: top left; position: absolute; top: 0; left: 0; padding: 10px; border-radius: 30px; background: #183c32; box-shadow: 0 18px 50px #183c3226; }
+    iframe { display: block; border: 0; border-radius: 20px; background: #fbf7ee; }
+    #size { font-variant-numeric: tabular-nums; }
+    footer { text-align: center; max-width: 650px; }
+    @media (max-width: 500px) { body { padding: 14px; } header { margin-bottom: 16px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Find It</h1>
+      <p>Live release-web app at a phone-sized viewport.</p>
+    </div>
+    <div class="controls">
+      <label for="viewport">Phone size</label>
+      <select id="viewport">
+        <option value="320x568">Small · 320 × 568</option>
+        <option value="360x640">Compact · 360 × 640</option>
+        <option value="390x844" selected>Phone · 390 × 844</option>
+        <option value="430x932">Large · 430 × 932</option>
+      </select>
+      <button id="rotate" type="button" aria-pressed="false">Rotate</button>
+      <a href="/" target="_blank" rel="noopener">Full browser</a>
+    </div>
+  </header>
+  <main>
+    <div id="stage">
+      <div id="phone">
+        <iframe id="app" src="/" title="Find It mobile app" allow="cross-origin-isolated; clipboard-write"></iframe>
+      </div>
+    </div>
+    <p id="size" role="status"></p>
+    <footer><p>This is a browser layout review, not an Android installation or device test. Saves stay on this local preview origin. Resizing does not reset your progress.</p></footer>
+  </main>
+  <script>
+    const viewport = document.getElementById('viewport');
+    const rotate = document.getElementById('rotate');
+    const app = document.getElementById('app');
+    const phone = document.getElementById('phone');
+    const stage = document.getElementById('stage');
+    let landscape = false;
+    function resize() {
+      let [width, height] = viewport.value.split('x').map(Number);
+      if (landscape) [width, height] = [height, width];
+      app.width = width;
+      app.height = height;
+      const scale = Math.min(1, Math.max(180, innerWidth - 48) / (width + 20), Math.max(240, innerHeight - 205) / (height + 20));
+      phone.style.transform = `scale(${scale})`;
+      stage.style.width = `${(width + 20) * scale}px`;
+      stage.style.height = `${(height + 20) * scale}px`;
+      document.getElementById('size').textContent = `${width} × ${height} CSS pixels · ${landscape ? 'Landscape' : 'Portrait'}`;
+    }
+    viewport.addEventListener('change', resize);
+    rotate.addEventListener('click', () => {
+      landscape = !landscape;
+      rotate.setAttribute('aria-pressed', String(landscape));
+      resize();
+    });
+    window.addEventListener('resize', resize);
+    resize();
+  </script>
+</body>
+</html>

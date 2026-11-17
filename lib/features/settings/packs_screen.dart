@@ -152,7 +152,7 @@ class _PacksScreenState extends ConsumerState<PacksScreen> {
                           ),
                           const SizedBox(height: 5),
                           Text(
-                            '${pack.count} unique levels · ${pack.bundled ? 'Included with FindIt' : 'Downloaded & validated'}',
+                            '${pack.count} unique levels · ${pack.bundled ? 'Included with ${AppConfig.name}' : 'Downloaded & validated'}',
                             style: Theme.of(context).textTheme.bodySmall
                                 ?.copyWith(color: FindItColors.forest),
                           ),

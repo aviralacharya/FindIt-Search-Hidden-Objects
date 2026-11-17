@@ -1,6 +1,6 @@
 abstract final class AppConfig {
-  static const name = 'FindIt';
-  static const launcherName = 'FindIt';
+  static const name = 'Find It';
+  static const launcherName = 'Find It';
   static const androidPackage = 'abiral.mobile.findit';
   static const iconAsset = 'assets/branding/app_icon.png';
   static const tagline = 'Little things. Wonderful places. Look closer.';

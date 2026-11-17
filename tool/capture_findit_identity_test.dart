@@ -244,10 +244,13 @@ void main() {
         await app.go(tester, '/settings');
         await app.mount(tester, size: size, textScale: scale);
         expect(find.text('60 levels included · play offline'), findsOneWidget);
-        expect(find.text('FindIt 1.0.0'), findsOneWidget);
+        expect(
+          find.text('${AppConfig.name} ${AppConfig.version}'),
+          findsOneWidget,
+        );
         for (final (suffix, title) in [
           ('settings-collection', 'Puzzle collection'),
-          ('settings-about', 'About FindIt'),
+          ('settings-about', 'About ${AppConfig.name}'),
         ]) {
           await Scrollable.ensureVisible(
             tester.element(find.text(title)),

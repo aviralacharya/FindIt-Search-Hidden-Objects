@@ -1,5 +1,5 @@
 name: findit
-description: 'FindIt: colorful offline hidden-object adventures.'
+description: 'Find It: colorful offline hidden-object adventures.'
 publish_to: 'none'
 version: 1.0.0+1
 
@@ -70,5 +70,7 @@ flutter_native_splash:
   web: true
   android_12:
     color: '#FBF7EE'
-    image: assets/branding/splash_mark.png
+    # A 960px master from the same original logo prevents Android's 240dp icon
+    # from enlarging a small legacy splash bitmap.
+    image: assets/branding/android12_splash_mark.png
     icon_background_color: '#FBF7EE'

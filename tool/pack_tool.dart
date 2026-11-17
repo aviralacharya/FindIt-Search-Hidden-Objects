@@ -35,16 +35,14 @@ void main(List<String> arguments) {
   try {
     if (arguments.isEmpty ||
         !['example', 'validate', 'schema'].contains(arguments.first)) {
-      stdout.writeln(
-        '''FindIt Hidden Objects pack publisher tool (run from the project root)
+      stdout.writeln('''Find It Hidden Objects pack publisher tool (run from the project root)
   dart run tool/pack_tool.dart example [output.json]
   dart run tool/pack_tool.dart schema [output.schema.json]
   dart run tool/pack_tool.dart validate input.json [--against other.json] [--canonical output.json]
 
 Validation always checks against the bundled catalog. Add --against for other
 installed/published packs. SHA-256 is for the exact input bytes, not authenticity.
-No downloads are performed. Artwork still needs independent human review.''',
-      );
+No downloads are performed. Artwork still needs independent human review.''');
       exitCode = arguments.isEmpty ? 0 : 64;
       return;
     }
@@ -73,7 +71,7 @@ No downloads are performed. Artwork still needs independent human review.''',
           'contentVersion': 1,
           'packId': 'findit-hidden-sample-expansion-v1',
           'title': 'Three more hidden-object discoveries',
-          'license': 'Original FindIt vector compositions generated from this project’s editable source. Publisher rights review required before distribution.',
+          'license': 'Original Find It vector compositions generated from this project’s editable source. Publisher rights review required before distribution.',
           'puzzles': [
             for (var scene = 0; scene < 3; scene++)
               PuzzleGenerator.generate(

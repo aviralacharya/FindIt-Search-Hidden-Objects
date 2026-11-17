@@ -5,6 +5,7 @@ import 'package:go_router/go_router.dart';
 import '../../app/app_services.dart';
 import '../../app/theme.dart';
 import '../../core/art/brand_art.dart';
+import '../../core/config/app_config.dart';
 import 'common.dart';
 
 const _destinations = <(String, String, IconData)>[
@@ -118,7 +119,7 @@ class _Wordmark extends StatelessWidget {
       SizedBox(width: 9),
       Flexible(
         child: Text(
-          'FindIt',
+          AppConfig.name,
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: TextStyle(

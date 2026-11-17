@@ -1,5 +1,5 @@
 {
-  "createdAt": "2026-11-07T14:10:58.180935Z",
+  "createdAt": "2026-11-07T15:14:42.899108Z",
   "generator": "tool/prepare_branding_test.dart",
   "source": "assets/branding/icon_source.png",
   "sourceSha256": "1b5d868fbced8eada2be4b5af5383edfeefbc611b3e92cf34e8fec1b4b096521",
@@ -15,8 +15,12 @@
   "adaptiveForegroundFraction": 0.47061501531004873,
   "adaptiveMaxRadiusDp": 31.319999999999997,
   "adaptiveSafeRadiusDp": 33,
+  "android12SplashSizeDp": 240,
+  "android12SplashMasterPixels": 960,
+  "android12SplashMaxRadiusDp": 69.6,
+  "android12SplashSafeRadiusDp": 80,
   "playIcon": "512x512, opaque 32-bit PNG, at most 1 MiB; no added corner mask or shadow",
-  "method": "Preserve original PNG bytes and all artwork colors. Exclude only fully transparent outer margins, center with uniform scaling, and retain transparency in app/adaptive/splash art. Composite legacy, web and Play icons onto cream. Derive themed pixels from the original rim, handle, leaf and hills by removing the light lens fill and disconnected speckles; no alternate logo drawing.",
+  "method": "Preserve original PNG bytes and all artwork colors. Exclude only fully transparent outer margins, center with uniform scaling, and retain transparency in app/adaptive/splash art. Render Android 12 splash images directly from the original at 240dp per density (up to 960px), never from small launcher or legacy splash rasters. Composite legacy, web and Play icons onto cream. Derive themed pixels from the original rim, handle, leaf and hills by removing the light lens fill and disconnected speckles; no alternate logo drawing.",
   "scope": "Generated asset and mask checks, not Android launcher/runtime QA or a legal rights determination.",
   "outputs": [
     {
@@ -57,7 +61,7 @@
       "height": 1024,
       "bytes": 24136,
       "sha256": "71ddb62e4c28114b9dc589e232cb69bb889db552dab55511a307051b6c1d4d0f",
-      "previousSha256": "95c1d95377c0d037ac18a25c236de09a41437147c029fd1764eee74e45686e7f"
+      "previousSha256": "71ddb62e4c28114b9dc589e232cb69bb889db552dab55511a307051b6c1d4d0f"
     },
     {
       "file": "assets/branding/splash_mark.png",
@@ -66,6 +70,13 @@
       "bytes": 34084,
       "sha256": "9b337bd6b68abb49d09159147b07512db25cada3a89f6c5e952fca91de3a689f",
       "previousSha256": "9b337bd6b68abb49d09159147b07512db25cada3a89f6c5e952fca91de3a689f"
+    },
+    {
+      "file": "assets/branding/android12_splash_mark.png",
+      "width": 960,
+      "height": 960,
+      "bytes": 102424,
+      "sha256": "d6e2b700155a106c4a2f6935c5c4b37aaa90677caad2a6877eb447b35fa76858"
     },
     {
       "file": "android/app/src/main/res/mipmap-mdpi/ic_launcher.png",
@@ -89,7 +100,7 @@
       "height": 108,
       "bytes": 983,
       "sha256": "bc95e9c53435e92306e76550601fd7db100488f4697b3b8e0ba5b03a109f82e4",
-      "previousSha256": "bfe9019482a646a869c4c9c51be0ccf272424155fab1f953ef297e1e7dff4ad5"
+      "previousSha256": "bc95e9c53435e92306e76550601fd7db100488f4697b3b8e0ba5b03a109f82e4"
     },
     {
       "file": "android/app/src/main/res/drawable-mdpi/splash.png",
@@ -101,18 +112,18 @@
     },
     {
       "file": "android/app/src/main/res/drawable-mdpi/android12splash.png",
-      "width": 72,
-      "height": 72,
-      "bytes": 1213,
-      "sha256": "a12c862f17f2184c7cf47cb7f468c8137945a4eb1dbe831a15d34a09ad86261e",
+      "width": 240,
+      "height": 240,
+      "bytes": 8836,
+      "sha256": "7ac3605f6d7c060b46a5fb77339feea9bec14172f89e7abf42540ac45e489462",
       "previousSha256": "a12c862f17f2184c7cf47cb7f468c8137945a4eb1dbe831a15d34a09ad86261e"
     },
     {
       "file": "android/app/src/main/res/drawable-night-mdpi/android12splash.png",
-      "width": 72,
-      "height": 72,
-      "bytes": 1213,
-      "sha256": "a12c862f17f2184c7cf47cb7f468c8137945a4eb1dbe831a15d34a09ad86261e",
+      "width": 240,
+      "height": 240,
+      "bytes": 8836,
+      "sha256": "7ac3605f6d7c060b46a5fb77339feea9bec14172f89e7abf42540ac45e489462",
       "previousSha256": "a12c862f17f2184c7cf47cb7f468c8137945a4eb1dbe831a15d34a09ad86261e"
     },
     {
@@ -137,7 +148,7 @@
       "height": 162,
       "bytes": 1626,
       "sha256": "15d0910629d3112f6339e82b14ae75dc0e62a15e7e5455a017bc27454af934b0",
-      "previousSha256": "2b353831369260e60a249977da67e64e1e5fb3cb88949bb87203fb487983bafb"
+      "previousSha256": "15d0910629d3112f6339e82b14ae75dc0e62a15e7e5455a017bc27454af934b0"
     },
     {
       "file": "android/app/src/main/res/drawable-hdpi/splash.png",
@@ -149,18 +160,18 @@
     },
     {
       "file": "android/app/src/main/res/drawable-hdpi/android12splash.png",
-      "width": 108,
-      "height": 108,
-      "bytes": 2349,
-      "sha256": "b8ee7d95ad78dd7d2ba7f9d4eb0d616a8287439832ac600de77351651644b118",
+      "width": 360,
+      "height": 360,
+      "bytes": 18022,
+      "sha256": "ccb2f6a9b70d70dc3ebabd881671def5fe0f9989fd25b635d4e8f68b5e958317",
       "previousSha256": "b8ee7d95ad78dd7d2ba7f9d4eb0d616a8287439832ac600de77351651644b118"
     },
     {
       "file": "android/app/src/main/res/drawable-night-hdpi/android12splash.png",
-      "width": 108,
-      "height": 108,
-      "bytes": 2349,
-      "sha256": "b8ee7d95ad78dd7d2ba7f9d4eb0d616a8287439832ac600de77351651644b118",
+      "width": 360,
+      "height": 360,
+      "bytes": 18022,
+      "sha256": "ccb2f6a9b70d70dc3ebabd881671def5fe0f9989fd25b635d4e8f68b5e958317",
       "previousSha256": "b8ee7d95ad78dd7d2ba7f9d4eb0d616a8287439832ac600de77351651644b118"
     },
     {
@@ -185,7 +196,7 @@
       "height": 216,
       "bytes": 2404,
       "sha256": "aaac46a178dc6b8494fb17d1328ed06daa6d66cfb2d09f10aaab0498ef0a4a04",
-      "previousSha256": "d96f7b74cb9b4790d19a41105a5a11e4d8278aa8c0df6691f42e3ed642d2cdec"
+      "previousSha256": "aaac46a178dc6b8494fb17d1328ed06daa6d66cfb2d09f10aaab0498ef0a4a04"
     },
     {
       "file": "android/app/src/main/res/drawable-xhdpi/splash.png",
@@ -197,18 +208,18 @@
     },
     {
       "file": "android/app/src/main/res/drawable-xhdpi/android12splash.png",
-      "width": 144,
-      "height": 144,
-      "bytes": 3741,
-      "sha256": "834989854bdccf3c77a41daa0a69992453daa4427dd4e34814f9da8aea60831e",
+      "width": 480,
+      "height": 480,
+      "bytes": 30189,
+      "sha256": "a4a8f605ce78d5f4a9cdac2d973d71184a96a89dfa36e0199e89ab16d3a9e28f",
       "previousSha256": "834989854bdccf3c77a41daa0a69992453daa4427dd4e34814f9da8aea60831e"
     },
     {
       "file": "android/app/src/main/res/drawable-night-xhdpi/android12splash.png",
-      "width": 144,
-      "height": 144,
-      "bytes": 3741,
-      "sha256": "834989854bdccf3c77a41daa0a69992453daa4427dd4e34814f9da8aea60831e",
+      "width": 480,
+      "height": 480,
+      "bytes": 30189,
+      "sha256": "a4a8f605ce78d5f4a9cdac2d973d71184a96a89dfa36e0199e89ab16d3a9e28f",
       "previousSha256": "834989854bdccf3c77a41daa0a69992453daa4427dd4e34814f9da8aea60831e"
     },
     {
@@ -233,7 +244,7 @@
       "height": 324,
       "bytes": 4348,
       "sha256": "bd3775249111dd206626ac799531ae36d7dfde0c717bc811804ce0b0049118ba",
-      "previousSha256": "b4e5451bd87cd0b5750753afc96b03a96f7d47975aa4752cc7c8ebbd60fbe8ca"
+      "previousSha256": "bd3775249111dd206626ac799531ae36d7dfde0c717bc811804ce0b0049118ba"
     },
     {
       "file": "android/app/src/main/res/drawable-xxhdpi/splash.png",
@@ -245,18 +256,18 @@
     },
     {
       "file": "android/app/src/main/res/drawable-xxhdpi/android12splash.png",
-      "width": 216,
-      "height": 216,
-      "bytes": 7435,
-      "sha256": "dcad27b3f0e435c9c92399f0f2557b694699ab7b7b491af82c512307dcc421c1",
+      "width": 720,
+      "height": 720,
+      "bytes": 62399,
+      "sha256": "0aaa25eb8b49dc4a6659fa230999ddecab03840c17156a3734743a4bee58e492",
       "previousSha256": "dcad27b3f0e435c9c92399f0f2557b694699ab7b7b491af82c512307dcc421c1"
     },
     {
       "file": "android/app/src/main/res/drawable-night-xxhdpi/android12splash.png",
-      "width": 216,
-      "height": 216,
-      "bytes": 7435,
-      "sha256": "dcad27b3f0e435c9c92399f0f2557b694699ab7b7b491af82c512307dcc421c1",
+      "width": 720,
+      "height": 720,
+      "bytes": 62399,
+      "sha256": "0aaa25eb8b49dc4a6659fa230999ddecab03840c17156a3734743a4bee58e492",
       "previousSha256": "dcad27b3f0e435c9c92399f0f2557b694699ab7b7b491af82c512307dcc421c1"
     },
     {
@@ -281,7 +292,7 @@
       "height": 432,
       "bytes": 6649,
       "sha256": "750349fd7ddc53ecd3bba2c7e08c4133cfbef9c29e26c85bd940622c0269dc97",
-      "previousSha256": "4ecb45d3b1d6d6c7569c33c8fc2774e72bfa9c3736dead90df93868c3cab7d20"
+      "previousSha256": "750349fd7ddc53ecd3bba2c7e08c4133cfbef9c29e26c85bd940622c0269dc97"
     },
     {
       "file": "android/app/src/main/res/drawable-xxxhdpi/splash.png",
@@ -293,18 +304,18 @@
     },
     {
       "file": "android/app/src/main/res/drawable-xxxhdpi/android12splash.png",
-      "width": 288,
-      "height": 288,
-      "bytes": 12240,
-      "sha256": "fcbfdf32c43ba4fa9a1011fe7c0ad910eff6c26d753069a78347de5422364822",
+      "width": 960,
+      "height": 960,
+      "bytes": 102424,
+      "sha256": "d6e2b700155a106c4a2f6935c5c4b37aaa90677caad2a6877eb447b35fa76858",
       "previousSha256": "fcbfdf32c43ba4fa9a1011fe7c0ad910eff6c26d753069a78347de5422364822"
     },
     {
       "file": "android/app/src/main/res/drawable-night-xxxhdpi/android12splash.png",
-      "width": 288,
-      "height": 288,
-      "bytes": 12240,
-      "sha256": "fcbfdf32c43ba4fa9a1011fe7c0ad910eff6c26d753069a78347de5422364822",
+      "width": 960,
+      "height": 960,
+      "bytes": 102424,
+      "sha256": "d6e2b700155a106c4a2f6935c5c4b37aaa90677caad2a6877eb447b35fa76858",
       "previousSha256": "fcbfdf32c43ba4fa9a1011fe7c0ad910eff6c26d753069a78347de5422364822"
     },
     {
@@ -441,7 +452,7 @@
       "height": 384,
       "bytes": 5666,
       "sha256": "ec08bc1a996fdfc288fb933dc9844c643b16095c7f5a607b57dfc0d04aaa5396",
-      "previousSha256": "f9832cab854d55f3222e8d717fcfe3d4e2dac8bd7161ae5a0b83501135bcaf7f"
+      "previousSha256": "ec08bc1a996fdfc288fb933dc9844c643b16095c7f5a607b57dfc0d04aaa5396"
     }
   ]
 }

@@ -1,69 +1,235 @@
 {
-  "checkedAt": "2026-11-06T05:37:57.988Z",
-  "url": "http://127.0.0.1:8771/",
+  "checkedAt": "2026-11-17T13:46:51.965Z",
+  "url": "http://127.0.0.1:8772/",
   "scope": "Actual release web app in a new test-only Chrome profile; no ordinary browser or installed storage accessed or cleared.",
-  "profile": "build/verification-tests/web-profile-tjPLrM",
+  "profile": "build/verification-tests/web-profile-7BTKde",
   "status": "passed",
   "captures": [
     {
-      "file": "verification/web-preview/runs/2026-11-06T05-37-57-988Z/wide-home.png",
-      "sha256": "5c07ab8aae0ed694b3e1a96abd0699b80c5c4846a10daa722704856c61a6585d",
+      "file": "verification/web-preview/runs/2026-11-17T13-46-51-965Z/wide-home.png",
+      "sha256": "b14a62e105ef1ced02aa2a6f97a4a195b2890c5f43536727fb8eaf8fa1a25b4a",
       "width": 1440,
       "height": 960
     },
     {
-      "file": "verification/web-preview/runs/2026-11-06T05-37-57-988Z/wide-search.png",
+      "file": "verification/web-preview/runs/2026-11-17T13-46-51-965Z/mobile-home-320x568.png",
+      "sha256": "a869041017b7afa9239b967df5a570d0c734d904b6c8ce9a08b501f890e1da6b",
+      "width": 320,
+      "height": 568
+    },
+    {
+      "file": "verification/web-preview/runs/2026-11-17T13-46-51-965Z/mobile-home-360x640.png",
+      "sha256": "7f8054c99ef7eb92bd8371c9c3b5aea60bd7a3e84c5a67250a4857c2e697a977",
+      "width": 360,
+      "height": 640
+    },
+    {
+      "file": "verification/web-preview/runs/2026-11-17T13-46-51-965Z/mobile-home-390x844.png",
+      "sha256": "fb43e5ab4c6c17e49a3877edf474526de75c9096641b60cebd8ca675f84d29ba",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "file": "verification/web-preview/runs/2026-11-17T13-46-51-965Z/mobile-home-430x932.png",
+      "sha256": "7f05512375f824a60bb435444ec4c0716727f81b94caf98e26595d034c6edba5",
+      "width": 430,
+      "height": 932
+    },
+    {
+      "file": "verification/web-preview/runs/2026-11-17T13-46-51-965Z/mobile-home-844x390.png",
+      "sha256": "643683b86070c8977e24f9ccdd0cd9dc004e77ba74628562372b62822a107301",
+      "width": 844,
+      "height": 390
+    },
+    {
+      "file": "verification/web-preview/runs/2026-11-17T13-46-51-965Z/wide-search.png",
       "sha256": "8d37f1d1b074779bea82d3775ffb21b61279d8ec57b835e3437c466af21c483a",
       "width": 1440,
       "height": 960
     },
     {
-      "file": "verification/web-preview/runs/2026-11-06T05-37-57-988Z/wide-area-hint.png",
-      "sha256": "e553b8ac460a550a08dd9282b04cff285551899d06de604fb5e1786bf709dd3f",
+      "file": "verification/web-preview/runs/2026-11-17T13-46-51-965Z/wide-area-hint.png",
+      "sha256": "f5258beab7bd34d3da5b9891a839468fa247207324f2d8bb493a4002ddca7407",
       "width": 1440,
       "height": 960
     },
     {
-      "file": "verification/web-preview/runs/2026-11-06T05-37-57-988Z/wide-precise-reveal.png",
-      "sha256": "40dfeb486b727d614e3842556682887dc51eafe61b0109ee5ad0572181e75e00",
+      "file": "verification/web-preview/runs/2026-11-17T13-46-51-965Z/wide-precise-reveal.png",
+      "sha256": "7e02212ea0389ec68cf30c070273e50a2549f92b98eb4a38953a1fb3426cfa03",
       "width": 1440,
       "height": 960
     },
     {
-      "file": "verification/web-preview/runs/2026-11-06T05-37-57-988Z/wide-resumed-search.png",
+      "file": "verification/web-preview/runs/2026-11-17T13-46-51-965Z/wide-resumed-search.png",
       "sha256": "2b564a7810a745894e6bcab78f068dd9be5df21687cd1842c577e30addf7661c",
       "width": 1440,
       "height": 960
     },
     {
-      "file": "verification/web-preview/runs/2026-11-06T05-37-57-988Z/wide-completed.png",
-      "sha256": "b1510f53e6044943936304d8e0b8e54b71f70037a55eb49ddb147ef6f70b0d45",
+      "file": "verification/web-preview/runs/2026-11-17T13-46-51-965Z/wide-completed.png",
+      "sha256": "e0d450783682befd9019e61c4785a06080ad8fa6b582be5b62925a812a511adc",
       "width": 1440,
       "height": 960
     },
     {
-      "file": "verification/web-preview/runs/2026-11-06T05-37-57-988Z/phone-home.png",
-      "sha256": "67f04d7cd942f0b7f802dbbecca5af37b7b61d3d81dbbe65b67b9090745aa7aa",
+      "file": "verification/web-preview/runs/2026-11-17T13-46-51-965Z/phone-home.png",
+      "sha256": "5fdacb8a116744e1b4aefb23392258466d72c00209d2300206ab74666723ae7c",
       "width": 390,
       "height": 844
     },
     {
-      "file": "verification/web-preview/runs/2026-11-06T05-37-57-988Z/phone-resume-choice.png",
-      "sha256": "91582927ac8b597c2caf09a748773cf4f1af052bd83bdb60f9f0b35c83c95a8f",
+      "file": "verification/web-preview/runs/2026-11-17T13-46-51-965Z/phone-resume-choice.png",
+      "sha256": "d90b9662bbd7c11f2bcec444f6806a8174ce875a092793837e5ba9d19b8917d0",
       "width": 390,
       "height": 844
     },
     {
-      "file": "verification/web-preview/runs/2026-11-06T05-37-57-988Z/phone-search.png",
+      "file": "verification/web-preview/runs/2026-11-17T13-46-51-965Z/phone-search.png",
       "sha256": "a7c043dcdec021b20164cd94db25b856e897e04b9243d55437dbfb9a3106b81f",
       "width": 390,
       "height": 844
+    },
+    {
+      "file": "verification/web-preview/runs/2026-11-17T13-46-51-965Z/listing-home.png",
+      "sha256": "bf6eae6cb55e9e5d8e6335e69ea8098526f08fc9ed9059737d110ed6aaf97ca5",
+      "width": 1080,
+      "height": 1920
+    },
+    {
+      "file": "verification/web-preview/runs/2026-11-17T13-46-51-965Z/listing-garden-search.png",
+      "sha256": "6de81e2e9684731ea99445634c07f7bc47ce1c2d6810d2425df3421da93a6d73",
+      "width": 1080,
+      "height": 1920
+    },
+    {
+      "file": "verification/web-preview/runs/2026-11-17T13-46-51-965Z/phone-progress.png",
+      "sha256": "376c43037b6fe0c16ef596c2ba394ea7b9e71f2f618f24d0606617e4169bc5f9",
+      "width": 1080,
+      "height": 1920
+    },
+    {
+      "file": "verification/web-preview/runs/2026-11-17T13-46-51-965Z/phone-settings.png",
+      "sha256": "80a6ed063ff839dc942dae33a80cf395b448786c91d91d08c08d0071415487c6",
+      "width": 1080,
+      "height": 1920
+    },
+    {
+      "file": "verification/web-preview/runs/2026-11-17T13-46-51-965Z/phone-collection.png",
+      "sha256": "dcb5814e0fbcb05ce3df65b842a45640c39d85120afe79d5ca48b96ddbafa39e",
+      "width": 1080,
+      "height": 1920
+    },
+    {
+      "file": "verification/web-preview/runs/2026-11-17T13-46-51-965Z/phone-about.png",
+      "sha256": "305c3456514ab208813c72b1dbf050c79560a6d08bcff692d489a9d69919d4fd",
+      "width": 1080,
+      "height": 1920
+    },
+    {
+      "file": "verification/web-preview/runs/2026-11-17T13-46-51-965Z/phone-licenses.png",
+      "sha256": "9bb0031145ac6c67cc645725e12676583edb4ff595e5c3d73d1ec31162178b8e",
+      "width": 1080,
+      "height": 1920
+    },
+    {
+      "file": "verification/web-preview/runs/2026-11-17T13-46-51-965Z/phone-privacy.png",
+      "sha256": "358e076925536f8f10ee63d88ac691c8414692b6accb72b99fe34adfdd1916c7",
+      "width": 1080,
+      "height": 1920
+    },
+    {
+      "file": "verification/web-preview/runs/2026-11-17T13-46-51-965Z/listing-daily.png",
+      "sha256": "436893b02799895b54eec42ed1226440b6c658dce1a14c653139cca3b9b3d91a",
+      "width": 1080,
+      "height": 1920
+    },
+    {
+      "file": "verification/web-preview/runs/2026-11-17T13-46-51-965Z/listing-levels.png",
+      "sha256": "2447b9d5e98f3679d9924f7aaf0e2d26af89666a0566f8c2a7e0114412ffdaca",
+      "width": 1080,
+      "height": 1920
+    },
+    {
+      "file": "verification/web-preview/runs/2026-11-17T13-46-51-965Z/phone-home-final.png",
+      "sha256": "d5645ffa1e9d5e9d7c9a05c4b9df66fb26e25c6b5cad0587ca52e3a006743178",
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "listingCaptures": [
+    {
+      "file": "release/play-store/screenshots/phone/2026-11-17T13-46-51-965Z/01-home.png",
+      "sha256": "bf6eae6cb55e9e5d8e6335e69ea8098526f08fc9ed9059737d110ed6aaf97ca5",
+      "width": 1080,
+      "height": 1920,
+      "format": "png",
+      "alpha": false
+    },
+    {
+      "file": "release/play-store/screenshots/phone/2026-11-17T13-46-51-965Z/02-garden-search.png",
+      "sha256": "6de81e2e9684731ea99445634c07f7bc47ce1c2d6810d2425df3421da93a6d73",
+      "width": 1080,
+      "height": 1920,
+      "format": "png",
+      "alpha": false
+    },
+    {
+      "file": "release/play-store/screenshots/phone/2026-11-17T13-46-51-965Z/03-daily-challenges.png",
+      "sha256": "436893b02799895b54eec42ed1226440b6c658dce1a14c653139cca3b9b3d91a",
+      "width": 1080,
+      "height": 1920,
+      "format": "png",
+      "alpha": false
+    },
+    {
+      "file": "release/play-store/screenshots/phone/2026-11-17T13-46-51-965Z/04-level-library.png",
+      "sha256": "2447b9d5e98f3679d9924f7aaf0e2d26af89666a0566f8c2a7e0114412ffdaca",
+      "width": 1080,
+      "height": 1920,
+      "format": "png",
+      "alpha": false
     }
   ],
   "checks": [
     {
       "check": "Rendered Home and Flutter semantics",
       "status": "passed"
+    },
+    {
+      "check": "Find It production branding and responsive document: desktop home",
+      "status": "passed",
+      "width": 1440,
+      "height": 960
+    },
+    {
+      "check": "Find It production branding and responsive document: home at 320 by 568",
+      "status": "passed",
+      "width": 320,
+      "height": 568
+    },
+    {
+      "check": "Find It production branding and responsive document: home at 360 by 640",
+      "status": "passed",
+      "width": 360,
+      "height": 640
+    },
+    {
+      "check": "Find It production branding and responsive document: home at 390 by 844",
+      "status": "passed",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "check": "Find It production branding and responsive document: home at 430 by 932",
+      "status": "passed",
+      "width": 430,
+      "height": 932
+    },
+    {
+      "check": "Find It production branding and responsive document: home at 844 by 390",
+      "status": "passed",
+      "width": 844,
+      "height": 390
     },
     {
       "check": "Cross-origin isolation for durable storage",
@@ -99,7 +265,87 @@
       "status": "passed"
     },
     {
-      "check": "Actual web Home and gameplay render at a phone viewport",
+      "check": "Find It production branding and responsive document: phone gameplay",
+      "status": "passed",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "check": "Actual web Home, resume dialog and gameplay work with phone touch input",
+      "status": "passed"
+    },
+    {
+      "check": "Find It production branding and responsive document: phone level journey",
+      "status": "passed",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "check": "Find It production branding and responsive document: listing home",
+      "status": "passed",
+      "width": 360,
+      "height": 640
+    },
+    {
+      "check": "Find It production branding and responsive document: phone progress",
+      "status": "passed",
+      "width": 360,
+      "height": 640
+    },
+    {
+      "check": "Find It production branding and responsive document: phone settings",
+      "status": "passed",
+      "width": 360,
+      "height": 640
+    },
+    {
+      "check": "Phone sound preference is changed through touch UI and survives full reload",
+      "status": "passed"
+    },
+    {
+      "check": "Find It production branding and responsive document: phone included collection",
+      "status": "passed",
+      "width": 360,
+      "height": 640
+    },
+    {
+      "check": "Find It production branding and responsive document: phone about",
+      "status": "passed",
+      "width": 360,
+      "height": 640
+    },
+    {
+      "check": "Find It production branding and responsive document: phone licenses",
+      "status": "passed",
+      "width": 360,
+      "height": 640
+    },
+    {
+      "check": "Find It production branding and responsive document: phone complete offline privacy policy",
+      "status": "passed",
+      "width": 360,
+      "height": 640
+    },
+    {
+      "check": "Find It production branding and responsive document: phone daily challenges",
+      "status": "passed",
+      "width": 360,
+      "height": 640
+    },
+    {
+      "check": "Find It production branding and responsive document: phone level library",
+      "status": "passed",
+      "width": 360,
+      "height": 640
+    },
+    {
+      "check": "Find It production branding and responsive document: final phone home",
+      "status": "passed",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "check": "Phone navigation, About, licenses, all 11 privacy sections, collection and Daily screens",
       "status": "passed"
     },
     {
@@ -113,19 +359,19 @@
   "externalRequests": [],
   "browser": {
     "protocolVersion": "1.3",
-    "product": "Chrome/157.0.8103.38",
-    "revision": "@a733b5afbb3ba618844ff8876b89ad1a774b2f18",
+    "product": "Chrome/157.0.8103.52",
+    "revision": "@0985600c06a688b9c669e74afde7dacd5aaed047",
     "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
     "jsVersion": "15.7.112.23"
   },
   "environment": {
-    "title": "FindIt - Search Hidden Objects",
+    "title": "Find It",
     "crossOriginIsolated": true,
     "viewport": {
       "width": 1440,
       "height": 960
     },
-    "semantics": "FindIt\nSearch Hidden Objects\nYOUR LITTLE CORNER\nPlay\nDaily\nProgress\nSettings\nYour offline escape No accounts. No rush. Just you and a good puzzle.\nLOOK CLOSELY. STAY CURIOUS.\nFind little treasures. Leave the rush behind.\nHIDDEN OBJECTS. LITTLE ADVENTURES.\nLook closer. A little wonder awaits.\nStart searching\nExplore colorful places, spot the objects on your list, and enjoy the simple delight of finding. No ads. No sign-up. No rush.\nA LITTLE SOMETHING FOR TODAY Your daily adventure Three fresh puzzles, a moment of focus, and 60 bonus coins when you finish. Let’s play\n60 offline search levels\nNo sign-up. Just play.\nWhere will you search?\nFEATURED SCENES\nYour first three adventures. Familiar objects, wonderfully hidden.\nLEVEL 1 · HOME Sunlit reading room 6 objects · Easy 0 of 3 stars\nLEVEL 2 · GARDEN The secret garden 6 objects · Easy 0 of 3 stars\nLEVEL 3 · CAFÉ A corner café 6 objects · Easy 0 of 3 stars\nExplore all 60 hidden-object levels\nA little challenge for your eyes. A little calm for your day.\n100 coins",
+    "semantics": "Find It\nSearch Hidden Objects\nYOUR LITTLE CORNER\nPlay\nDaily\nProgress\nSettings\nYour offline escape No accounts. No rush. Just you and a good puzzle.\nLOOK CLOSELY. STAY CURIOUS.\nFind little treasures. Leave the rush behind.\nHIDDEN OBJECTS. LITTLE ADVENTURES.\nLook closer. A little wonder awaits.\nStart searching\nExplore colorful places, spot the objects on your list, and enjoy the simple delight of finding. No ads. No sign-up. No rush.\nA LITTLE SOMETHING FOR TODAY Your daily adventure Three fresh puzzles, a moment of focus, and 60 bonus coins when you finish. Let’s play\n60 offline search levels\nNo sign-up. Just play.\nWhere will you search?\nFEATURED SCENES\nYour first three adventures. Familiar objects, wonderfully hidden.\nLEVEL 1 · HOME Sunlit reading room 6 objects · Easy 0 of 3 stars\nLEVEL 2 · GARDEN The secret garden 6 objects · Easy 0 of 3 stars\nLEVEL 3 · CAFÉ A corner café 6 objects · Easy 0 of 3 stars\nExplore all 60 hidden-object levels\nA little challenge for your eyes. A little calm for your day.\n100 coins",
     "localStorageKeys": [],
     "databases": [],
     "storage": {
@@ -137,6 +383,12 @@
       }
     }
   },
+  "webBuildSha256": "a1744c468ccfc440a3e5fc56726ecebf65446295a596598009b8981eb4f26de4",
+  "webManifest": {
+    "name": "Find It",
+    "shortName": "Find It",
+    "id": "findit-hidden-objects"
+  },
   "finalStorage": {
     "opfsPaths": [
       "drift_db",
@@ -144,11 +396,11 @@
       "drift_db/findit_hidden_objects_v1/database"
     ],
     "estimate": {
-      "quota": 10737514385,
-      "usage": 96145,
+      "quota": 10737513314,
+      "usage": 95074,
       "usageDetails": {
         "fileSystem": 90630,
-        "indexedDB": 5515
+        "indexedDB": 4444
       }
     }
   }

@@ -225,7 +225,7 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
                     Icons.info_outline_rounded,
                     size: 38,
                   ),
-                  title: const Text('About FindIt'),
+                  title: const Text('About ${AppConfig.name}'),
                   subtitle: const Text(
                     'Game information, support, and licenses.',
                   ),
@@ -240,7 +240,7 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
           const SizedBox(height: 26),
           Center(
             child: Text(
-              'FindIt ${AppConfig.version}${AppConfig.production ? '' : ' · development build'}',
+              '${AppConfig.name} ${AppConfig.version}${AppConfig.production ? '' : ' · development build'}',
               textAlign: TextAlign.center,
               style: Theme.of(context).textTheme.bodySmall
                   ?.copyWith(color: FindItColors.muted),

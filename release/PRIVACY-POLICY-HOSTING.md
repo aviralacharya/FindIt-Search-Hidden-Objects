@@ -25,7 +25,7 @@ Both renderers deliberately reject links, URL text, and app package identifiers.
 
 - Review the policy against the release's actual behavior and your legal obligations. It is a prepared disclosure, not legal advice.
 - Confirm **Abiral Acharya** and **abiralacharya80@gmail.com** are the correct public developer/contact details. They match the app's existing configuration.
-- Confirm the new listing is for `abiral.mobile.findit`, launcher name **FindIt**, version `1.0.0` / code `1`.
+- Confirm the new listing is for `abiral.mobile.findit`, launcher name **Find It**, version `1.0.0` / code `1`.
 - Keep `PACK_INDEX_URL` empty, with no ads, analytics, purchases, or remote pack server for this release. If those practices change, update the canonical policy and store disclosures, then regenerate the HTML.
 - Update the policy date when approving a later revision.
 

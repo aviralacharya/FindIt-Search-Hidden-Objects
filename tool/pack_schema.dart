@@ -32,7 +32,7 @@ Map<String, dynamic> _object(
 /// catalog. Cross-field gameplay rules still require the shared Dart validator.
 Map<String, dynamic> packSchema() => {
   r'$schema': 'https://json-schema.org/draft/2020-12/schema',
-  'title': 'FindIt Hidden Objects declarative scene pack v1',
+  'title': 'Find It Hidden Objects declarative scene pack v1',
   'description': 'Hidden-object scenes only. No code, remote images, ZIPs or daily IDs. Also run tool/pack_tool.dart validate.',
   ..._object(
     {

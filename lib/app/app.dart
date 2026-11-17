@@ -121,7 +121,7 @@ class _AppBootstrapState extends State<AppBootstrap> {
                       const FindItMark(size: 76),
                       const SizedBox(height: 24),
                       Text(
-                        'FindIt',
+                        AppConfig.name,
                         style: buildFindItTheme().textTheme.headlineLarge,
                       ),
                       const SizedBox(height: 14),
@@ -144,7 +144,7 @@ class _AppBootstrapState extends State<AppBootstrap> {
                         ),
                         const SizedBox(height: 12),
                         const Text(
-                          'Try again after freeing device storage. For the web preview, use a normal browser window with local storage allowed. FindIt won’t silently discard your saved progress.',
+                          'Try again after freeing device storage. For the web preview, use a normal browser window with local storage allowed. ${AppConfig.name} won’t silently discard your saved progress.',
                           textAlign: TextAlign.center,
                           style: TextStyle(
                             color: FindItColors.muted,

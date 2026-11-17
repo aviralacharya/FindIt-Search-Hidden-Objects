@@ -1,10 +1,10 @@
-# FindIt
+# Find It
 
-<img src="assets/branding/app_icon.png" alt="FindIt magnifying-glass and golden-leaf app icon" width="96" height="96" />
+<img src="assets/branding/app_icon.png" alt="Find It magnifying-glass and golden-leaf app icon" width="96" height="96" />
 
 *Little things. Wonderful places. Look closer.*
 
-FindIt is an offline hidden-object game for Android. Explore colorful scenes, find hidden items, and earn rewards at your own pace.
+Find It is an offline hidden-object game for Android. Explore colorful scenes, find hidden items, and earn rewards at your own pace.
 
 - **Version:** 1.0.0 (unreleased).
 - **Android:** 7.0 and later.
@@ -18,7 +18,25 @@ FindIt is an offline hidden-object game for Android. Explore colorful scenes, fi
 - Daily Challenges with bonus rewards.
 - Save and resume progress, with adjustable sound, music, and vibration.
 
+## Mobile browser preview
+
+An APK requires Android; a browser cannot execute it directly. The same Flutter
+project can run as a phone-sized web preview. In the prepared local workspace:
+
+```sh
+flutter build web --release --no-pub --no-web-resources-cdn --dart-define-from-file=config/production.json
+python tool/serve_preview.py --port 8772
+```
+
+Open [the mobile preview](http://127.0.0.1:8772/mobile-preview). Choose a phone size
+or rotate it without resetting progress. The local server supplies the isolation
+headers needed for durable web storage; do not replace it with a plain file URL.
+The preview is not an Android installation or APK/device test. Local Python
+helpers are excluded from the public repository.
+
 ## Branding
+
+The installed app and in-app display name is **Find It**. Development and QA installers keep their identifying suffixes (**Find It Dev** and **Find It QA**). The Android package ID and local save namespace are unchanged.
 
 The original logo is preserved in `assets/branding/icon_source.png`. The app, Android launcher and splash screens, web icons, and Play Store icon are generated from that image without stretching it.
 
@@ -29,6 +47,8 @@ flutter test --no-pub tool/prepare_branding_test.dart
 ```
 
 The in-app logo retains transparency. `release/play-store/graphics/icon-512.png` is the opaque 512-pixel Play Store icon. Existing APKs must be rebuilt and reinstalled to show updated branding.
+
+Android 12 opening screens use `assets/branding/android12_splash_mark.png`, a 960-pixel master rendered from the same original logo. Native day/night splash assets are generated at 240dp for each screen density (240–960 pixels), rather than enlarging the small legacy splash image.
 
 ## Privacy
 

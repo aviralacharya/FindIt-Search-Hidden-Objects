@@ -28,7 +28,7 @@ void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
   setUpAll(loadFindItFonts);
 
-  testWidgets('the real startup screen uses FindIt and the launcher artwork', (
+  testWidgets('the real startup screen uses Find It and the launcher artwork', (
     tester,
   ) async {
     // Hold the preferences lookup before bootstrap can open any disk storage.
@@ -49,9 +49,10 @@ void main() {
       await tester.pump();
       expect(
         tester.widget<MaterialApp>(find.byType(MaterialApp)).title,
-        'FindIt',
+        'Find It',
       );
-      expect(find.text('FindIt'), findsOneWidget);
+      expect(find.text('Find It'), findsOneWidget);
+      expect(find.text('FindIt'), findsNothing);
       expect(find.byType(CircularProgressIndicator), findsOneWidget);
       _expectLauncherArtwork();
       expect(tester.widget<RawImage>(find.byType(RawImage)).image, isNotNull);
@@ -104,42 +105,43 @@ void main() {
     expect(tester.takeException(), isNull);
   });
 
-  testWidgets('home, about and licenses share FindIt naming and icon artwork', (
-    tester,
-  ) async {
-    final app = await AppHarness.forTest(tester);
-    try {
-      await app.mount(tester);
-      for (final route in ['/', '/about']) {
-        await app.go(tester, route);
-        expect(
-          tester.widget<MaterialApp>(find.byType(MaterialApp)).title,
-          'FindIt',
+  testWidgets(
+    'home, about and licenses share Find It naming and icon artwork',
+    (tester) async {
+      final app = await AppHarness.forTest(tester);
+      try {
+        await app.mount(tester);
+        for (final route in ['/', '/about']) {
+          await app.go(tester, route);
+          expect(
+            tester.widget<MaterialApp>(find.byType(MaterialApp)).title,
+            'Find It',
+          );
+          _expectLauncherArtwork();
+          final text = tester
+              .widgetList<Text>(find.byType(Text))
+              .map((widget) => widget.data ?? '')
+              .join('\n');
+          expect(text, isNot(contains('FindIt')));
+          expect(tester.takeException(), isNull, reason: route);
+        }
+        await app.tap(tester, find.text('Open-source licenses'));
+        await app.until(
+          tester,
+          () => find.text('Licenses').evaluate().isNotEmpty,
         );
-        _expectLauncherArtwork();
-        final text = tester
-            .widgetList<Text>(find.byType(Text))
-            .map((widget) => widget.data ?? '')
-            .join('\n');
-        expect(text, isNot(contains('FindIt Hidden')));
-        expect(text, isNot(contains('FindIt - Search Hidden Objects')));
-        expect(tester.takeException(), isNull, reason: route);
+        await app.pump(tester, const Duration(milliseconds: 600));
+        expect(find.byType(LicensePage), findsOneWidget);
+        _expectLauncherArtwork(within: find.byType(LicensePage));
+        expect(find.text('Find It'), findsAtLeastNWidgets(1));
+        expect(find.text('FindIt'), findsNothing);
+        expect(app.requests, isEmpty);
+        expect(tester.takeException(), isNull);
+      } finally {
+        await app.close(tester);
       }
-      await app.tap(tester, find.text('Open-source licenses'));
-      await app.until(
-        tester,
-        () => find.text('Licenses').evaluate().isNotEmpty,
-      );
-      await app.pump(tester, const Duration(milliseconds: 600));
-      expect(find.byType(LicensePage), findsOneWidget);
-      _expectLauncherArtwork(within: find.byType(LicensePage));
-      expect(find.text('FindIt'), findsAtLeastNWidgets(1));
-      expect(app.requests, isEmpty);
-      expect(tester.takeException(), isNull);
-    } finally {
-      await app.close(tester);
-    }
-  });
+    },
+  );
 
   testWidgets('About keeps player information, support and legal access only', (
     tester,
@@ -148,7 +150,7 @@ void main() {
     try {
       await app.mount(tester);
       await app.go(tester, '/about');
-      expect(find.text('About FindIt'), findsOneWidget);
+      expect(find.text('About Find It'), findsOneWidget);
       expect(find.text('Version 1.0.0'), findsOneWidget);
       expect(find.text('Contact developer'), findsOneWidget);
       expect(find.text('Open-source licenses'), findsOneWidget);
@@ -186,6 +188,41 @@ void main() {
       expect(find.text('Privacy Policy'), findsAtLeastNWidgets(1));
       expect(app.requests, isEmpty);
       expect(tester.takeException(), isNull);
+    } finally {
+      await app.close(tester);
+    }
+  });
+
+  testWidgets('all player-facing routes use the spaced app name', (
+    tester,
+  ) async {
+    final app = await AppHarness.forTest(tester);
+    try {
+      await app.mount(tester);
+      for (final route in [
+        '/',
+        '/daily',
+        '/progress',
+        '/settings',
+        '/packs',
+        '/privacy',
+        '/about',
+      ]) {
+        await app.go(tester, route);
+        expect(
+          tester.widget<MaterialApp>(find.byType(MaterialApp)).title,
+          'Find It',
+          reason: route,
+        );
+        final text = tester
+            .widgetList<Text>(find.byType(Text))
+            .map((widget) => widget.data ?? '')
+            .join('\n');
+        expect(text, contains('Find It'), reason: route);
+        expect(text, isNot(contains('FindIt')), reason: route);
+        expect(tester.takeException(), isNull, reason: route);
+      }
+      expect(app.requests, isEmpty);
     } finally {
       await app.close(tester);
     }

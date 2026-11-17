@@ -16,7 +16,8 @@ void main() {
     () async {
       final document = await PrivacyPolicyDocument.load();
       expect(document.title, 'Privacy Policy');
-      expect(document.appName, 'FindIt');
+      expect(document.appName, 'Find It');
+      expect(jsonEncode(_source()), isNot(contains('FindIt')));
       expect(document.sections, hasLength(11));
       expect(
         document.revisionLabel,

@@ -14,6 +14,10 @@ import 'package:flutter_test/flutter_test.dart';
 
 const _cream = Color(0xFFFBF7EE);
 const _sourcePath = 'assets/branding/icon_source.png';
+// Android 12 displays a background-backed splash icon at 240dp, not the 72dp
+// legacy splash size. Its xxxhdpi master must be 960px to avoid upscaling.
+const _android12SplashSizeDp = 240;
+const _android12SplashMasterSide = _android12SplashSizeDp * 4;
 
 Rect _foregroundBounds(Uint8List pixels, int width, int height) {
   var left = width;
@@ -295,6 +299,11 @@ void main() {
     final radius = _foregroundRadius(pixels, source.width, bounds);
     final adaptiveFraction = math.min(.68, .29 / radius);
     expect(radius * adaptiveFraction, lessThan(33 / 108));
+    expect(
+      radius * adaptiveFraction * _android12SplashSizeDp,
+      lessThan(80),
+      reason: 'The Android 12 logo must fit inside its 160dp safe circle.',
+    );
     final monochrome = await _imageFromPixels(
       _retainLargestComponent(
         _monochromePixels(pixels),
@@ -355,6 +364,11 @@ void main() {
     await padded('assets/branding/icon_foreground.png', 1024, 1024);
     await padded('assets/branding/icon_monochrome.png', 1024, 1024, mono: true);
     await padded('assets/branding/splash_mark.png', 512, 512);
+    await padded(
+      'assets/branding/android12_splash_mark.png',
+      _android12SplashMasterSide,
+      _android12SplashMasterSide,
+    );
 
     const densities = {
       'mdpi': 1.0,
@@ -381,13 +395,17 @@ void main() {
         adaptiveSide,
         mono: true,
       );
+      final legacySplashPath = '$drawable/splash.png';
+      final (legacyWidth, legacyHeight) = _existingDimensions(legacySplashPath);
+      await padded(legacySplashPath, legacyWidth, legacyHeight);
+      // Never inherit the small legacy bitmap dimensions for Android 12. Render
+      // every density directly from the original PNG at the displayed size.
+      final android12Side = (_android12SplashSizeDp * entry.value).round();
       for (final path in [
-        '$drawable/splash.png',
         '$drawable/android12splash.png',
         'android/app/src/main/res/drawable-night-${entry.key}/android12splash.png',
       ]) {
-        final (width, height) = _existingDimensions(path);
-        await padded(path, width, height);
+        await padded(path, android12Side, android12Side);
       }
     }
     for (final side in [192, 512]) {
@@ -461,8 +479,13 @@ void main() {
       'adaptiveForegroundFraction': adaptiveFraction,
       'adaptiveMaxRadiusDp': radius * adaptiveFraction * 108,
       'adaptiveSafeRadiusDp': 33,
+      'android12SplashSizeDp': _android12SplashSizeDp,
+      'android12SplashMasterPixels': _android12SplashMasterSide,
+      'android12SplashMaxRadiusDp':
+          radius * adaptiveFraction * _android12SplashSizeDp,
+      'android12SplashSafeRadiusDp': 80,
       'playIcon': '512x512, opaque 32-bit PNG, at most 1 MiB; no added corner mask or shadow',
-      'method': 'Preserve original PNG bytes and all artwork colors. Exclude only fully transparent outer margins, center with uniform scaling, and retain transparency in app/adaptive/splash art. Composite legacy, web and Play icons onto cream. Derive themed pixels from the original rim, handle, leaf and hills by removing the light lens fill and disconnected speckles; no alternate logo drawing.',
+      'method': 'Preserve original PNG bytes and all artwork colors. Exclude only fully transparent outer margins, center with uniform scaling, and retain transparency in app/adaptive/splash art. Render Android 12 splash images directly from the original at 240dp per density (up to 960px), never from small launcher or legacy splash rasters. Composite legacy, web and Play icons onto cream. Derive themed pixels from the original rim, handle, leaf and hills by removing the light lens fill and disconnected speckles; no alternate logo drawing.',
       'scope': 'Generated asset and mask checks, not Android launcher/runtime QA or a legal rights determination.',
       'outputs': outputs,
     };
