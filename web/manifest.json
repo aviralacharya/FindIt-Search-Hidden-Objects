@@ -1,6 +1,6 @@
 {
-    "name": "Find It",
-    "short_name": "Find It",
+    "name": "Seek More",
+    "short_name": "Seek More",
     "id": "findit-hidden-objects",
     "start_url": ".",
     "display": "standalone",

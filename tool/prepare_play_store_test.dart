@@ -153,7 +153,7 @@ void main() {
     },
   );
 
-  test('prepare the Find It 1024 by 500 Play feature graphic', () async {
+  test('prepare the Seek More 1024 by 500 Play feature graphic', () async {
     for (final family in ['Outfit', 'Nunito']) {
       final loader = FontLoader(family)
         ..addFont(rootBundle.load('assets/fonts/$family.ttf'));

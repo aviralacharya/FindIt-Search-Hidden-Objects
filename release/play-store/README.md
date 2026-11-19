@@ -1,10 +1,12 @@
-# Find It · Play listing inputs
+# Seek More · Play listing inputs
 
-Use **Find It** as the listing app name. The production launcher and in-app name
-are also **Find It**. The package remains `abiral.mobile.findit`.
+Use **Seek More: Hidden Objects Game** as the Google Play listing title (30
+characters). The app, production launcher, and installer display name are
+**Seek More**. The package remains `abiral.mobile.findit`.
 
 ## Listing files
 
+- Title: `release/play-store/title.txt`.
 - Short description: `short-description.md` in the project root.
 - Full description: `long-description.md` in the project root.
 - Icon: `release/play-store/graphics/icon-512.png` (512 × 512).
@@ -44,7 +46,7 @@ After the current policy is public, use private masked password entry:
 python tool/build_signed_aab.py --dialog --policy-url https://aviralacharya.github.io/FindIt-Search-Hidden-Objects/privacy-policy
 ```
 
-The helper retains `Find-It-1.0.0.aab`, its matching R8 mapping, inspection and
+The helper retains `Seek-More-1.0.0.aab`, its matching R8 mapping, inspection and
 checksums in a new `release/local/<date>/revisions/signed-<time>/` directory. It
 reuses the existing upload key and never uploads or publishes anything.
 

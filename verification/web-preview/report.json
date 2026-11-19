@@ -1,172 +1,172 @@
 {
-  "checkedAt": "2026-11-17T13:46:51.965Z",
-  "url": "http://127.0.0.1:8772/",
+  "checkedAt": "2026-11-18T15:25:45.364Z",
+  "url": "http://127.0.0.1:8773/",
   "scope": "Actual release web app in a new test-only Chrome profile; no ordinary browser or installed storage accessed or cleared.",
-  "profile": "build/verification-tests/web-profile-7BTKde",
+  "profile": "build/verification-tests/web-profile-uf9IyZ",
   "status": "passed",
   "captures": [
     {
-      "file": "verification/web-preview/runs/2026-11-17T13-46-51-965Z/wide-home.png",
-      "sha256": "b14a62e105ef1ced02aa2a6f97a4a195b2890c5f43536727fb8eaf8fa1a25b4a",
+      "file": "verification/web-preview/runs/2026-11-18T15-25-45-364Z/wide-home.png",
+      "sha256": "a3fc62270be06a2b8d67d02f35dd7525a291cb76fd70a8bb815a582b0ff62575",
       "width": 1440,
       "height": 960
     },
     {
-      "file": "verification/web-preview/runs/2026-11-17T13-46-51-965Z/mobile-home-320x568.png",
-      "sha256": "a869041017b7afa9239b967df5a570d0c734d904b6c8ce9a08b501f890e1da6b",
+      "file": "verification/web-preview/runs/2026-11-18T15-25-45-364Z/mobile-home-320x568.png",
+      "sha256": "52871b105258c1558c09beda8ae3fafafaaf05f1b3ea034fc4cdc4398ae08144",
       "width": 320,
       "height": 568
     },
     {
-      "file": "verification/web-preview/runs/2026-11-17T13-46-51-965Z/mobile-home-360x640.png",
-      "sha256": "7f8054c99ef7eb92bd8371c9c3b5aea60bd7a3e84c5a67250a4857c2e697a977",
+      "file": "verification/web-preview/runs/2026-11-18T15-25-45-364Z/mobile-home-360x640.png",
+      "sha256": "2f583fd521fda788d23af5c7833edb1ec231daf67be2a6a1c50701597dfa49ec",
       "width": 360,
       "height": 640
     },
     {
-      "file": "verification/web-preview/runs/2026-11-17T13-46-51-965Z/mobile-home-390x844.png",
-      "sha256": "fb43e5ab4c6c17e49a3877edf474526de75c9096641b60cebd8ca675f84d29ba",
+      "file": "verification/web-preview/runs/2026-11-18T15-25-45-364Z/mobile-home-390x844.png",
+      "sha256": "dbbd286ecd1891468061295021e1e4c469f3b373958c8d5a3b68467739c3d0ce",
       "width": 390,
       "height": 844
     },
     {
-      "file": "verification/web-preview/runs/2026-11-17T13-46-51-965Z/mobile-home-430x932.png",
-      "sha256": "7f05512375f824a60bb435444ec4c0716727f81b94caf98e26595d034c6edba5",
+      "file": "verification/web-preview/runs/2026-11-18T15-25-45-364Z/mobile-home-430x932.png",
+      "sha256": "03d60fcf855f374bea3cb526245213d4d296b99ded9f40e8b27bc659cc40121b",
       "width": 430,
       "height": 932
     },
     {
-      "file": "verification/web-preview/runs/2026-11-17T13-46-51-965Z/mobile-home-844x390.png",
-      "sha256": "643683b86070c8977e24f9ccdd0cd9dc004e77ba74628562372b62822a107301",
+      "file": "verification/web-preview/runs/2026-11-18T15-25-45-364Z/mobile-home-844x390.png",
+      "sha256": "40a278d919941552bdbec3efae8583b47603fbb7c042b158e8296cb9ed19be6c",
       "width": 844,
       "height": 390
     },
     {
-      "file": "verification/web-preview/runs/2026-11-17T13-46-51-965Z/wide-search.png",
+      "file": "verification/web-preview/runs/2026-11-18T15-25-45-364Z/wide-search.png",
       "sha256": "8d37f1d1b074779bea82d3775ffb21b61279d8ec57b835e3437c466af21c483a",
       "width": 1440,
       "height": 960
     },
     {
-      "file": "verification/web-preview/runs/2026-11-17T13-46-51-965Z/wide-area-hint.png",
-      "sha256": "f5258beab7bd34d3da5b9891a839468fa247207324f2d8bb493a4002ddca7407",
+      "file": "verification/web-preview/runs/2026-11-18T15-25-45-364Z/wide-area-hint.png",
+      "sha256": "7e8873ff94545b1b5bef01c507e46cf9a3a9d03fd3e932f0527f74481b6485ef",
       "width": 1440,
       "height": 960
     },
     {
-      "file": "verification/web-preview/runs/2026-11-17T13-46-51-965Z/wide-precise-reveal.png",
-      "sha256": "7e02212ea0389ec68cf30c070273e50a2549f92b98eb4a38953a1fb3426cfa03",
+      "file": "verification/web-preview/runs/2026-11-18T15-25-45-364Z/wide-precise-reveal.png",
+      "sha256": "b4243a8392e28f2a93b0195072e0d7490b6c87d30e2e2f913c2311a04c360b32",
       "width": 1440,
       "height": 960
     },
     {
-      "file": "verification/web-preview/runs/2026-11-17T13-46-51-965Z/wide-resumed-search.png",
+      "file": "verification/web-preview/runs/2026-11-18T15-25-45-364Z/wide-resumed-search.png",
       "sha256": "2b564a7810a745894e6bcab78f068dd9be5df21687cd1842c577e30addf7661c",
       "width": 1440,
       "height": 960
     },
     {
-      "file": "verification/web-preview/runs/2026-11-17T13-46-51-965Z/wide-completed.png",
-      "sha256": "e0d450783682befd9019e61c4785a06080ad8fa6b582be5b62925a812a511adc",
+      "file": "verification/web-preview/runs/2026-11-18T15-25-45-364Z/wide-completed.png",
+      "sha256": "ccadc601ea49c30347b915cf7e03c0f87eac2b5355b9b2a0c435e0b1b76b77e8",
       "width": 1440,
       "height": 960
     },
     {
-      "file": "verification/web-preview/runs/2026-11-17T13-46-51-965Z/phone-home.png",
-      "sha256": "5fdacb8a116744e1b4aefb23392258466d72c00209d2300206ab74666723ae7c",
+      "file": "verification/web-preview/runs/2026-11-18T15-25-45-364Z/phone-home.png",
+      "sha256": "d5cd48ad5de257261ca046ac73d665d2f4604eb90badb422e785b764ad6cc6e6",
       "width": 390,
       "height": 844
     },
     {
-      "file": "verification/web-preview/runs/2026-11-17T13-46-51-965Z/phone-resume-choice.png",
-      "sha256": "d90b9662bbd7c11f2bcec444f6806a8174ce875a092793837e5ba9d19b8917d0",
+      "file": "verification/web-preview/runs/2026-11-18T15-25-45-364Z/phone-resume-choice.png",
+      "sha256": "f3fbcd078a0e58131fa97ab9b01d49b363121a090a555c954df14c226cfd3e13",
       "width": 390,
       "height": 844
     },
     {
-      "file": "verification/web-preview/runs/2026-11-17T13-46-51-965Z/phone-search.png",
+      "file": "verification/web-preview/runs/2026-11-18T15-25-45-364Z/phone-search.png",
       "sha256": "a7c043dcdec021b20164cd94db25b856e897e04b9243d55437dbfb9a3106b81f",
       "width": 390,
       "height": 844
     },
     {
-      "file": "verification/web-preview/runs/2026-11-17T13-46-51-965Z/listing-home.png",
-      "sha256": "bf6eae6cb55e9e5d8e6335e69ea8098526f08fc9ed9059737d110ed6aaf97ca5",
+      "file": "verification/web-preview/runs/2026-11-18T15-25-45-364Z/listing-home.png",
+      "sha256": "83c2726e63d482477fa5b575f52d4f2720751a57c15277a3b0468bcf8567ee0a",
       "width": 1080,
       "height": 1920
     },
     {
-      "file": "verification/web-preview/runs/2026-11-17T13-46-51-965Z/listing-garden-search.png",
+      "file": "verification/web-preview/runs/2026-11-18T15-25-45-364Z/listing-garden-search.png",
       "sha256": "6de81e2e9684731ea99445634c07f7bc47ce1c2d6810d2425df3421da93a6d73",
       "width": 1080,
       "height": 1920
     },
     {
-      "file": "verification/web-preview/runs/2026-11-17T13-46-51-965Z/phone-progress.png",
-      "sha256": "376c43037b6fe0c16ef596c2ba394ea7b9e71f2f618f24d0606617e4169bc5f9",
+      "file": "verification/web-preview/runs/2026-11-18T15-25-45-364Z/phone-progress.png",
+      "sha256": "3fa72e20dd1adf2733c38df84ff60ff02782ac8778d1a4b68342f763a5e7134f",
       "width": 1080,
       "height": 1920
     },
     {
-      "file": "verification/web-preview/runs/2026-11-17T13-46-51-965Z/phone-settings.png",
-      "sha256": "80a6ed063ff839dc942dae33a80cf395b448786c91d91d08c08d0071415487c6",
+      "file": "verification/web-preview/runs/2026-11-18T15-25-45-364Z/phone-settings.png",
+      "sha256": "6c8bfd223089e2d579270c7ef3d631662367d4c68135ef33a5fef5ec03c010fc",
       "width": 1080,
       "height": 1920
     },
     {
-      "file": "verification/web-preview/runs/2026-11-17T13-46-51-965Z/phone-collection.png",
-      "sha256": "dcb5814e0fbcb05ce3df65b842a45640c39d85120afe79d5ca48b96ddbafa39e",
+      "file": "verification/web-preview/runs/2026-11-18T15-25-45-364Z/phone-collection.png",
+      "sha256": "3753f34f72a4cda31e6cc26d248bdcabe003ccfe6ec94a8464a1dc7fc62950ae",
       "width": 1080,
       "height": 1920
     },
     {
-      "file": "verification/web-preview/runs/2026-11-17T13-46-51-965Z/phone-about.png",
-      "sha256": "305c3456514ab208813c72b1dbf050c79560a6d08bcff692d489a9d69919d4fd",
+      "file": "verification/web-preview/runs/2026-11-18T15-25-45-364Z/phone-about.png",
+      "sha256": "2ef30423fc184bdd15fe1edf5a4e20ebf9062fe28a67fda5efeb6e1162808928",
       "width": 1080,
       "height": 1920
     },
     {
-      "file": "verification/web-preview/runs/2026-11-17T13-46-51-965Z/phone-licenses.png",
-      "sha256": "9bb0031145ac6c67cc645725e12676583edb4ff595e5c3d73d1ec31162178b8e",
+      "file": "verification/web-preview/runs/2026-11-18T15-25-45-364Z/phone-licenses.png",
+      "sha256": "202c115f42adeed00f0b16be5b71b8e23b8c61c0e1e365d03f0fd2a7dc46b781",
       "width": 1080,
       "height": 1920
     },
     {
-      "file": "verification/web-preview/runs/2026-11-17T13-46-51-965Z/phone-privacy.png",
-      "sha256": "358e076925536f8f10ee63d88ac691c8414692b6accb72b99fe34adfdd1916c7",
+      "file": "verification/web-preview/runs/2026-11-18T15-25-45-364Z/phone-privacy.png",
+      "sha256": "b374656c25434c1910b423953e7495d07bb7d7647bd3b440053737bf3e29defe",
       "width": 1080,
       "height": 1920
     },
     {
-      "file": "verification/web-preview/runs/2026-11-17T13-46-51-965Z/listing-daily.png",
-      "sha256": "436893b02799895b54eec42ed1226440b6c658dce1a14c653139cca3b9b3d91a",
+      "file": "verification/web-preview/runs/2026-11-18T15-25-45-364Z/listing-daily.png",
+      "sha256": "eaed65b97d3c66896e238ed3fe376b1814243e27ce89007f3ea421a17a55265a",
       "width": 1080,
       "height": 1920
     },
     {
-      "file": "verification/web-preview/runs/2026-11-17T13-46-51-965Z/listing-levels.png",
+      "file": "verification/web-preview/runs/2026-11-18T15-25-45-364Z/listing-levels.png",
       "sha256": "2447b9d5e98f3679d9924f7aaf0e2d26af89666a0566f8c2a7e0114412ffdaca",
       "width": 1080,
       "height": 1920
     },
     {
-      "file": "verification/web-preview/runs/2026-11-17T13-46-51-965Z/phone-home-final.png",
-      "sha256": "d5645ffa1e9d5e9d7c9a05c4b9df66fb26e25c6b5cad0587ca52e3a006743178",
+      "file": "verification/web-preview/runs/2026-11-18T15-25-45-364Z/phone-home-final.png",
+      "sha256": "975daf8005ef490013c78fc236f5dd36272668e2cf270c6025f5d8cfe8383371",
       "width": 390,
       "height": 844
     }
   ],
   "listingCaptures": [
     {
-      "file": "release/play-store/screenshots/phone/2026-11-17T13-46-51-965Z/01-home.png",
-      "sha256": "bf6eae6cb55e9e5d8e6335e69ea8098526f08fc9ed9059737d110ed6aaf97ca5",
+      "file": "release/play-store/screenshots/phone/2026-11-18T15-25-45-364Z/01-home.png",
+      "sha256": "83c2726e63d482477fa5b575f52d4f2720751a57c15277a3b0468bcf8567ee0a",
       "width": 1080,
       "height": 1920,
       "format": "png",
       "alpha": false
     },
     {
-      "file": "release/play-store/screenshots/phone/2026-11-17T13-46-51-965Z/02-garden-search.png",
+      "file": "release/play-store/screenshots/phone/2026-11-18T15-25-45-364Z/02-garden-search.png",
       "sha256": "6de81e2e9684731ea99445634c07f7bc47ce1c2d6810d2425df3421da93a6d73",
       "width": 1080,
       "height": 1920,
@@ -174,15 +174,15 @@
       "alpha": false
     },
     {
-      "file": "release/play-store/screenshots/phone/2026-11-17T13-46-51-965Z/03-daily-challenges.png",
-      "sha256": "436893b02799895b54eec42ed1226440b6c658dce1a14c653139cca3b9b3d91a",
+      "file": "release/play-store/screenshots/phone/2026-11-18T15-25-45-364Z/03-daily-challenges.png",
+      "sha256": "eaed65b97d3c66896e238ed3fe376b1814243e27ce89007f3ea421a17a55265a",
       "width": 1080,
       "height": 1920,
       "format": "png",
       "alpha": false
     },
     {
-      "file": "release/play-store/screenshots/phone/2026-11-17T13-46-51-965Z/04-level-library.png",
+      "file": "release/play-store/screenshots/phone/2026-11-18T15-25-45-364Z/04-level-library.png",
       "sha256": "2447b9d5e98f3679d9924f7aaf0e2d26af89666a0566f8c2a7e0114412ffdaca",
       "width": 1080,
       "height": 1920,
@@ -196,37 +196,37 @@
       "status": "passed"
     },
     {
-      "check": "Find It production branding and responsive document: desktop home",
+      "check": "Seek More production branding and responsive document: desktop home",
       "status": "passed",
       "width": 1440,
       "height": 960
     },
     {
-      "check": "Find It production branding and responsive document: home at 320 by 568",
+      "check": "Seek More production branding and responsive document: home at 320 by 568",
       "status": "passed",
       "width": 320,
       "height": 568
     },
     {
-      "check": "Find It production branding and responsive document: home at 360 by 640",
+      "check": "Seek More production branding and responsive document: home at 360 by 640",
       "status": "passed",
       "width": 360,
       "height": 640
     },
     {
-      "check": "Find It production branding and responsive document: home at 390 by 844",
+      "check": "Seek More production branding and responsive document: home at 390 by 844",
       "status": "passed",
       "width": 390,
       "height": 844
     },
     {
-      "check": "Find It production branding and responsive document: home at 430 by 932",
+      "check": "Seek More production branding and responsive document: home at 430 by 932",
       "status": "passed",
       "width": 430,
       "height": 932
     },
     {
-      "check": "Find It production branding and responsive document: home at 844 by 390",
+      "check": "Seek More production branding and responsive document: home at 844 by 390",
       "status": "passed",
       "width": 844,
       "height": 390
@@ -265,7 +265,7 @@
       "status": "passed"
     },
     {
-      "check": "Find It production branding and responsive document: phone gameplay",
+      "check": "Seek More production branding and responsive document: phone gameplay",
       "status": "passed",
       "width": 390,
       "height": 844
@@ -275,25 +275,25 @@
       "status": "passed"
     },
     {
-      "check": "Find It production branding and responsive document: phone level journey",
+      "check": "Seek More production branding and responsive document: phone level journey",
       "status": "passed",
       "width": 390,
       "height": 844
     },
     {
-      "check": "Find It production branding and responsive document: listing home",
+      "check": "Seek More production branding and responsive document: listing home",
       "status": "passed",
       "width": 360,
       "height": 640
     },
     {
-      "check": "Find It production branding and responsive document: phone progress",
+      "check": "Seek More production branding and responsive document: phone progress",
       "status": "passed",
       "width": 360,
       "height": 640
     },
     {
-      "check": "Find It production branding and responsive document: phone settings",
+      "check": "Seek More production branding and responsive document: phone settings",
       "status": "passed",
       "width": 360,
       "height": 640
@@ -303,43 +303,43 @@
       "status": "passed"
     },
     {
-      "check": "Find It production branding and responsive document: phone included collection",
+      "check": "Seek More production branding and responsive document: phone included collection",
       "status": "passed",
       "width": 360,
       "height": 640
     },
     {
-      "check": "Find It production branding and responsive document: phone about",
+      "check": "Seek More production branding and responsive document: phone about",
       "status": "passed",
       "width": 360,
       "height": 640
     },
     {
-      "check": "Find It production branding and responsive document: phone licenses",
+      "check": "Seek More production branding and responsive document: phone licenses",
       "status": "passed",
       "width": 360,
       "height": 640
     },
     {
-      "check": "Find It production branding and responsive document: phone complete offline privacy policy",
+      "check": "Seek More production branding and responsive document: phone complete offline privacy policy",
       "status": "passed",
       "width": 360,
       "height": 640
     },
     {
-      "check": "Find It production branding and responsive document: phone daily challenges",
+      "check": "Seek More production branding and responsive document: phone daily challenges",
       "status": "passed",
       "width": 360,
       "height": 640
     },
     {
-      "check": "Find It production branding and responsive document: phone level library",
+      "check": "Seek More production branding and responsive document: phone level library",
       "status": "passed",
       "width": 360,
       "height": 640
     },
     {
-      "check": "Find It production branding and responsive document: final phone home",
+      "check": "Seek More production branding and responsive document: final phone home",
       "status": "passed",
       "width": 390,
       "height": 844
@@ -359,34 +359,34 @@
   "externalRequests": [],
   "browser": {
     "protocolVersion": "1.3",
-    "product": "Chrome/157.0.8103.52",
-    "revision": "@0985600c06a688b9c669e74afde7dacd5aaed047",
+    "product": "Chrome/157.0.8103.79",
+    "revision": "@6dc9bc3bdaea5c35ed6d41fceab2f7a3a2227c4f",
     "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
-    "jsVersion": "15.7.112.23"
+    "jsVersion": "15.7.112.43"
   },
   "environment": {
-    "title": "Find It",
+    "title": "Seek More",
     "crossOriginIsolated": true,
     "viewport": {
       "width": 1440,
       "height": 960
     },
-    "semantics": "Find It\nSearch Hidden Objects\nYOUR LITTLE CORNER\nPlay\nDaily\nProgress\nSettings\nYour offline escape No accounts. No rush. Just you and a good puzzle.\nLOOK CLOSELY. STAY CURIOUS.\nFind little treasures. Leave the rush behind.\nHIDDEN OBJECTS. LITTLE ADVENTURES.\nLook closer. A little wonder awaits.\nStart searching\nExplore colorful places, spot the objects on your list, and enjoy the simple delight of finding. No ads. No sign-up. No rush.\nA LITTLE SOMETHING FOR TODAY Your daily adventure Three fresh puzzles, a moment of focus, and 60 bonus coins when you finish. Let’s play\n60 offline search levels\nNo sign-up. Just play.\nWhere will you search?\nFEATURED SCENES\nYour first three adventures. Familiar objects, wonderfully hidden.\nLEVEL 1 · HOME Sunlit reading room 6 objects · Easy 0 of 3 stars\nLEVEL 2 · GARDEN The secret garden 6 objects · Easy 0 of 3 stars\nLEVEL 3 · CAFÉ A corner café 6 objects · Easy 0 of 3 stars\nExplore all 60 hidden-object levels\nA little challenge for your eyes. A little calm for your day.\n100 coins",
+    "semantics": "Seek More\nSearch Hidden Objects\nYOUR LITTLE CORNER\nPlay\nDaily\nProgress\nSettings\nYour offline escape No accounts. No rush. Just you and a good puzzle.\nLOOK CLOSELY. STAY CURIOUS.\nFind little treasures. Leave the rush behind.\nHIDDEN OBJECTS. LITTLE ADVENTURES.\nLook closer. A little wonder awaits.\nStart searching\nExplore colorful places, spot the objects on your list, and enjoy the simple delight of finding. No ads. No sign-up. No rush.\nA LITTLE SOMETHING FOR TODAY Your daily adventure Three fresh puzzles, a moment of focus, and 60 bonus coins when you finish. Let’s play\n60 offline search levels\nNo sign-up. Just play.\nWhere will you search?\nFEATURED SCENES\nYour first three adventures. Familiar objects, wonderfully hidden.\nLEVEL 1 · HOME Sunlit reading room 6 objects · Easy 0 of 3 stars\nLEVEL 2 · GARDEN The secret garden 6 objects · Easy 0 of 3 stars\nLEVEL 3 · CAFÉ A corner café 6 objects · Easy 0 of 3 stars\nExplore all 60 hidden-object levels\nA little challenge for your eyes. A little calm for your day.\n100 coins",
     "localStorageKeys": [],
     "databases": [],
     "storage": {
-      "quota": 10737493728,
-      "usage": 75488,
+      "quota": 10737493794,
+      "usage": 75554,
       "usageDetails": {
         "fileSystem": 74246,
-        "indexedDB": 1242
+        "indexedDB": 1308
       }
     }
   },
-  "webBuildSha256": "a1744c468ccfc440a3e5fc56726ecebf65446295a596598009b8981eb4f26de4",
+  "webBuildSha256": "75617a012d8bd3543f357d30bd45a5cc24dc389195be1fae2e0db6b52a2ba7b4",
   "webManifest": {
-    "name": "Find It",
-    "shortName": "Find It",
+    "name": "Seek More",
+    "shortName": "Seek More",
     "id": "findit-hidden-objects"
   },
   "finalStorage": {
@@ -396,11 +396,11 @@
       "drift_db/findit_hidden_objects_v1/database"
     ],
     "estimate": {
-      "quota": 10737513314,
-      "usage": 95074,
+      "quota": 10737513896,
+      "usage": 95656,
       "usageDetails": {
         "fileSystem": 90630,
-        "indexedDB": 4444
+        "indexedDB": 5026
       }
     }
   }

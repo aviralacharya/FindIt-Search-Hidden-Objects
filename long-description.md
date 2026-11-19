@@ -1,6 +1,6 @@
 Little things. Wonderful places. Look closer.
 
-Find It: Hidden Objects Game is a colorful offline hidden-object adventure. Explore scenes, search for the items on your checklist, and discover the small details hiding in plain sight. Take your time with a relaxed search or test your observation skills against the clock.
+Seek More: Hidden Objects Game is a colorful offline hidden-object adventure. Explore scenes, search for the items on your checklist, and discover the small details hiding in plain sight. Take your time with a relaxed search or test your observation skills against the clock.
 
 Explore 60 offline levels
 Enjoy 60 bundled levels without an internet connection. Pan around each scene and zoom in to get a closer look at hidden items.
@@ -20,4 +20,4 @@ Save and resume your progress, with game data stored locally on your device. Adj
 Simple and private
 No accounts, ads, analytics, or in-app purchases. Your progress and settings stay on your device, and the complete privacy policy is available offline in the app.
 
-Whether you have a few minutes or time for a longer search, there is always another detail to discover. Look closer and start your next hidden-object adventure with Find It.
+Whether you have a few minutes or time for a longer search, there is always another detail to discover. Look closer and start your next hidden-object adventure with Seek More.

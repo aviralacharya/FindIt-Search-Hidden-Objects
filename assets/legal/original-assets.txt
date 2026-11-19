@@ -1,9 +1,9 @@
-Find It - Search Hidden Objects asset provenance
+Seek More asset provenance
 
 The in-app vector glyphs, vector brand illustrations, classic scene backgrounds, synthesized audio,
-fonts, and 57 classic hidden-object compositions are reused from the local
-Find It project at E:\Google Apps\Find It. The original project is not modified.
-verification/source-reuse.json records copied paths and original SHA-256 hashes.
+fonts, and 57 classic hidden-object compositions are reused from the legacy local
+project identified in verification/source-reuse.json. The original project is not
+modified. That record preserves copied paths and original SHA-256 hashes.
 
 The Android launcher/splash, web icons/splash, and Play listing icon now use the
 publisher-supplied green magnifying-glass and golden-leaf PNG, not the original app's
@@ -34,7 +34,7 @@ Dependencies may have their own licenses; Flutter's license registry is accessib
 from Settings > About > Open-source licenses.
 
 This provenance record is not a legal opinion or an exclusivity/trademark claim.
-Before distribution, review the Find It name, artwork quality, source provenance,
+Before distribution, review the Seek More name, artwork quality, source provenance,
 and rights with the publisher. This app uses colorful illustrated vector art,
 not photography or photorealistic imagery. No external art service was used to
 generate the scene PNGs or prepare the supplied icon in this project.

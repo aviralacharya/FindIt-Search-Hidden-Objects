@@ -245,11 +245,11 @@ try {
       width: innerWidth, height: innerHeight,
       horizontalOverflow: document.documentElement.scrollWidth > innerWidth,
     }))()`);
-    if (result.title !== 'Find It' || result.text.includes('FindIt') || result.text.includes('development build')) {
+    if (result.title !== 'Seek More' || /\bFind[ -]?It\b/.test(result.text) || result.text.includes('development build')) {
       throw new Error(`Incorrect player-facing branding or non-production copy on ${page}.`);
     }
     if (result.horizontalOverflow) throw new Error(`Horizontal document overflow on ${page}.`);
-    report.checks.push({ check: `Find It production branding and responsive document: ${page}`, status: 'passed', width: result.width, height: result.height });
+    report.checks.push({ check: `Seek More production branding and responsive document: ${page}`, status: 'passed', width: result.width, height: result.height });
   };
   const coins = () => evaluate(`(() => {
     const values = [...document.querySelectorAll('flt-semantics')].map(element => ${labelOf});
@@ -313,8 +313,8 @@ try {
   if (!servedScript.equals(localScript)) throw new Error('The preview server is serving a different or stale web build.');
   report.webBuildSha256 = createHash('sha256').update(servedScript).digest('hex');
   report.webManifest = await evaluate("fetch('manifest.json').then(response => response.json()).then(value => ({ name: value.name, shortName: value.short_name, id: value.id }))");
-  if (report.webManifest.name !== 'Find It' || report.webManifest.shortName !== 'Find It') {
-    throw new Error('Installable web-app names do not match Find It.');
+  if (report.webManifest.name !== 'Seek More' || report.webManifest.shortName !== 'Seek More') {
+    throw new Error('Installable web-app names do not match Seek More.');
   }
   for (const [width, height] of [[320, 568], [360, 640], [390, 844], [430, 932], [844, 390]]) {
     await setViewport(width, height);
@@ -515,8 +515,8 @@ try {
   await capture('phone-collection');
   await click('Back to settings');
   await waitText('Just the way you like it.');
-  await scrollAndClick('About Find It', true);
-  await waitText('About Find It');
+  await scrollAndClick('About Seek More', true);
+  await waitText('About Seek More');
   await checkBranding('phone about');
   await capture('phone-about');
   await scrollAndClick('Open-source licenses');
@@ -524,7 +524,7 @@ try {
   await checkBranding('phone licenses');
   await capture('phone-licenses');
   await click('Back');
-  await waitText('About Find It');
+  await waitText('About Seek More');
   await scrollAndClick('Privacy policy');
   await waitText('11. Contact the developer');
   await checkBranding('phone complete offline privacy policy');
@@ -569,7 +569,7 @@ try {
   report.checks.push({ check: 'No uncaught errors, failed requests, or external web requests', status: 'passed' });
   report.status = 'passed';
   const listingManifest = {
-    checkedAt, appName: 'Find It', status: 'passed', webBuildSha256: report.webBuildSha256,
+    checkedAt, appName: 'Seek More', status: 'passed', webBuildSha256: report.webBuildSha256,
     scope: 'Actual production-config release-web app at 360 × 640 logical pixels and 3x scale, without browser chrome. Browser captures are not Android device QA; review against the Android app before listing use.',
     captures: report.listingCaptures,
   };

@@ -1,12 +1,12 @@
 {
-  "createdAtUtc": "2026-11-17T13:38:27.893357Z",
+  "createdAtUtc": "2026-11-18T15:16:35.007214Z",
   "generator": "tool/prepare_play_store_test.dart",
-  "appName": "Find It",
+  "appName": "Seek More",
   "file": "release/play-store/graphics/feature-graphic-1024x500.png",
   "width": 1024,
   "height": 500,
   "format": "24-bit RGB PNG; no alpha",
-  "sha256": "b113eea26af26c00f5e7c28a12cedf11f28deefcf3a8c432aeeee3b39b808a89",
+  "sha256": "c8fa3f688e0ea601d63a97603974a367d4a8a2a73574b89faf294801efd4c779",
   "inputs": {
     "assets/branding/app_icon.png": "006d322e883a8f4f5741f3e698c0535bb08b931602e6056650af2c7fbc77c6ae",
     "assets/scenes/hidden-001-a.png": "99b6d26f36b9471bcc18b1da9d84dd0393a01bbc53fe0b3a9ead91344c964cf3",

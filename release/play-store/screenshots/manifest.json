@@ -1,20 +1,20 @@
 {
-  "checkedAt": "2026-11-17T13:46:51.965Z",
-  "appName": "Find It",
+  "checkedAt": "2026-11-18T15:25:45.364Z",
+  "appName": "Seek More",
   "status": "passed",
-  "webBuildSha256": "a1744c468ccfc440a3e5fc56726ecebf65446295a596598009b8981eb4f26de4",
+  "webBuildSha256": "75617a012d8bd3543f357d30bd45a5cc24dc389195be1fae2e0db6b52a2ba7b4",
   "scope": "Actual production-config release-web app at 360 × 640 logical pixels and 3x scale, without browser chrome. Browser captures are not Android device QA; review against the Android app before listing use.",
   "captures": [
     {
-      "file": "release/play-store/screenshots/phone/2026-11-17T13-46-51-965Z/01-home.png",
-      "sha256": "bf6eae6cb55e9e5d8e6335e69ea8098526f08fc9ed9059737d110ed6aaf97ca5",
+      "file": "release/play-store/screenshots/phone/2026-11-18T15-25-45-364Z/01-home.png",
+      "sha256": "83c2726e63d482477fa5b575f52d4f2720751a57c15277a3b0468bcf8567ee0a",
       "width": 1080,
       "height": 1920,
       "format": "png",
       "alpha": false
     },
     {
-      "file": "release/play-store/screenshots/phone/2026-11-17T13-46-51-965Z/02-garden-search.png",
+      "file": "release/play-store/screenshots/phone/2026-11-18T15-25-45-364Z/02-garden-search.png",
       "sha256": "6de81e2e9684731ea99445634c07f7bc47ce1c2d6810d2425df3421da93a6d73",
       "width": 1080,
       "height": 1920,
@@ -22,15 +22,15 @@
       "alpha": false
     },
     {
-      "file": "release/play-store/screenshots/phone/2026-11-17T13-46-51-965Z/03-daily-challenges.png",
-      "sha256": "436893b02799895b54eec42ed1226440b6c658dce1a14c653139cca3b9b3d91a",
+      "file": "release/play-store/screenshots/phone/2026-11-18T15-25-45-364Z/03-daily-challenges.png",
+      "sha256": "eaed65b97d3c66896e238ed3fe376b1814243e27ce89007f3ea421a17a55265a",
       "width": 1080,
       "height": 1920,
       "format": "png",
       "alpha": false
     },
     {
-      "file": "release/play-store/screenshots/phone/2026-11-17T13-46-51-965Z/04-level-library.png",
+      "file": "release/play-store/screenshots/phone/2026-11-18T15-25-45-364Z/04-level-library.png",
       "sha256": "2447b9d5e98f3679d9924f7aaf0e2d26af89666a0566f8c2a7e0114412ffdaca",
       "width": 1080,
       "height": 1920,

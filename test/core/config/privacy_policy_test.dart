@@ -16,12 +16,13 @@ void main() {
     () async {
       final document = await PrivacyPolicyDocument.load();
       expect(document.title, 'Privacy Policy');
-      expect(document.appName, 'Find It');
+      expect(document.appName, 'Seek More');
+      expect(jsonEncode(_source()), isNot(contains('Find It')));
       expect(jsonEncode(_source()), isNot(contains('FindIt')));
       expect(document.sections, hasLength(11));
       expect(
         document.revisionLabel,
-        'Last updated: 6 November 2026 · Policy version 1.0.0',
+        'Last updated: 18 November 2026 · Policy version 1.0.0',
       );
       final source = _source();
       final sections = source['sections'] as List;

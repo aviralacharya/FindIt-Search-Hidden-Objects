@@ -55,12 +55,15 @@ void main() {
       expect(gradle, contains('applicationIdSuffix = ".qa"'));
       expect(
         gradle,
-        contains('manifestPlaceholders["appLabel"] = "Find It QA"'),
+        contains('manifestPlaceholders["appLabel"] = "Seek More QA"'),
       );
-      expect(gradle, contains('manifestPlaceholders["appLabel"] = "Find It"'));
       expect(
         gradle,
-        contains('manifestPlaceholders["appLabel"] = "Find It Dev"'),
+        contains('manifestPlaceholders["appLabel"] = "Seek More"'),
+      );
+      expect(
+        gradle,
+        contains('manifestPlaceholders["appLabel"] = "Seek More Dev"'),
       );
       expect(gradle, contains('signingConfig = null'));
       expect(gradle, contains('if (unsignedProductionCandidate) null'));
@@ -101,33 +104,43 @@ void main() {
     },
   );
 
-  test('Find It naming and one icon source agree across app and platforms', () {
-    expect(AppConfig.name, 'Find It');
-    expect(AppConfig.launcherName, 'Find It');
-    expect(AppConfig.androidPackage, 'abiral.mobile.findit');
-    expect(AppConfig.storageNamespace, 'findit_hidden_objects');
-    expect(AppConfig.version, '1.0.0');
-    expect(AppConfig.iconAsset, 'assets/branding/app_icon.png');
-    expect(
-      File('pubspec.yaml').readAsStringSync(),
-      contains('image_path: ${AppConfig.iconAsset}'),
-    );
-    final web = jsonDecode(File('web/manifest.json').readAsStringSync()) as Map;
-    expect(web['name'], AppConfig.name);
-    expect(web['short_name'], AppConfig.launcherName);
-    final index = File('web/index.html').readAsStringSync();
-    expect(index, contains('<title>Find It</title>'));
-    expect(
-      index,
-      contains('<meta name="apple-mobile-web-app-title" content="Find It">'),
-    );
-    expect(
-      File(
-        'android/app/src/main/kotlin/abiral/mobile/findithiddenobjects/MainActivity.kt',
-      ).existsSync(),
-      isFalse,
-    );
-  });
+  test(
+    'Seek More naming and one icon source agree across app and platforms',
+    () {
+      expect(AppConfig.name, 'Seek More');
+      expect(AppConfig.launcherName, 'Seek More');
+      expect(AppConfig.androidPackage, 'abiral.mobile.findit');
+      expect(AppConfig.storageNamespace, 'findit_hidden_objects');
+      expect(AppConfig.version, '1.0.0');
+      expect(AppConfig.iconAsset, 'assets/branding/app_icon.png');
+      expect(
+        File('android/app/src/main/AndroidManifest.xml').readAsStringSync(),
+        contains(r'android:label="${appLabel}"'),
+      );
+      expect(
+        File('pubspec.yaml').readAsStringSync(),
+        contains('image_path: ${AppConfig.iconAsset}'),
+      );
+      final web =
+          jsonDecode(File('web/manifest.json').readAsStringSync()) as Map;
+      expect(web['name'], AppConfig.name);
+      expect(web['short_name'], AppConfig.launcherName);
+      final index = File('web/index.html').readAsStringSync();
+      expect(index, contains('<title>Seek More</title>'));
+      expect(
+        index,
+        contains(
+          '<meta name="apple-mobile-web-app-title" content="Seek More">',
+        ),
+      );
+      expect(
+        File(
+          'android/app/src/main/kotlin/abiral/mobile/findithiddenobjects/MainActivity.kt',
+        ).existsSync(),
+        isFalse,
+      );
+    },
+  );
 
   test('Android 12 opening icons have native-resolution day and night assets', () {
     const densities = {

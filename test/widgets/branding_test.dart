@@ -28,43 +28,47 @@ void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
   setUpAll(loadFindItFonts);
 
-  testWidgets('the real startup screen uses Find It and the launcher artwork', (
-    tester,
-  ) async {
-    // Hold the preferences lookup before bootstrap can open any disk storage.
-    const preferences = MethodChannel('plugins.flutter.io/shared_preferences');
-    final pending = Completer<Object?>();
-    tester.binding.defaultBinaryMessenger.setMockMethodCallHandler(
-      preferences,
-      (_) => pending.future,
-    );
-    try {
-      await tester.pumpWidget(const AppBootstrap());
-      await tester.runAsync(
-        () => precacheImage(
-          const AssetImage(AppConfig.iconAsset),
-          tester.element(find.byType(FindItMark)),
-        ),
+  testWidgets(
+    'the real startup screen uses Seek More and the launcher artwork',
+    (tester) async {
+      // Hold the preferences lookup before bootstrap can open any disk storage.
+      const preferences = MethodChannel(
+        'plugins.flutter.io/shared_preferences',
       );
-      await tester.pump();
-      expect(
-        tester.widget<MaterialApp>(find.byType(MaterialApp)).title,
-        'Find It',
-      );
-      expect(find.text('Find It'), findsOneWidget);
-      expect(find.text('FindIt'), findsNothing);
-      expect(find.byType(CircularProgressIndicator), findsOneWidget);
-      _expectLauncherArtwork();
-      expect(tester.widget<RawImage>(find.byType(RawImage)).image, isNotNull);
-      expect(tester.takeException(), isNull);
-    } finally {
-      await tester.pumpWidget(const SizedBox.shrink());
+      final pending = Completer<Object?>();
       tester.binding.defaultBinaryMessenger.setMockMethodCallHandler(
         preferences,
-        null,
+        (_) => pending.future,
       );
-    }
-  });
+      try {
+        await tester.pumpWidget(const AppBootstrap());
+        await tester.runAsync(
+          () => precacheImage(
+            const AssetImage(AppConfig.iconAsset),
+            tester.element(find.byType(FindItMark)),
+          ),
+        );
+        await tester.pump();
+        expect(
+          tester.widget<MaterialApp>(find.byType(MaterialApp)).title,
+          'Seek More',
+        );
+        expect(find.text('Seek More'), findsOneWidget);
+        expect(find.text('Find It'), findsNothing);
+        expect(find.text('FindIt'), findsNothing);
+        expect(find.byType(CircularProgressIndicator), findsOneWidget);
+        _expectLauncherArtwork();
+        expect(tester.widget<RawImage>(find.byType(RawImage)).image, isNotNull);
+        expect(tester.takeException(), isNull);
+      } finally {
+        await tester.pumpWidget(const SizedBox.shrink());
+        tester.binding.defaultBinaryMessenger.setMockMethodCallHandler(
+          preferences,
+          null,
+        );
+      }
+    },
+  );
 
   for (final size in [33.0, 52.0, 76.0, 86.0]) {
     testWidgets('$size pixel brand mark renders the launcher icon asset', (
@@ -106,7 +110,7 @@ void main() {
   });
 
   testWidgets(
-    'home, about and licenses share Find It naming and icon artwork',
+    'home, about and licenses share Seek More naming and icon artwork',
     (tester) async {
       final app = await AppHarness.forTest(tester);
       try {
@@ -115,7 +119,7 @@ void main() {
           await app.go(tester, route);
           expect(
             tester.widget<MaterialApp>(find.byType(MaterialApp)).title,
-            'Find It',
+            'Seek More',
           );
           _expectLauncherArtwork();
           final text = tester
@@ -123,6 +127,7 @@ void main() {
               .map((widget) => widget.data ?? '')
               .join('\n');
           expect(text, isNot(contains('FindIt')));
+          expect(text, isNot(contains('Find It')));
           expect(tester.takeException(), isNull, reason: route);
         }
         await app.tap(tester, find.text('Open-source licenses'));
@@ -133,7 +138,8 @@ void main() {
         await app.pump(tester, const Duration(milliseconds: 600));
         expect(find.byType(LicensePage), findsOneWidget);
         _expectLauncherArtwork(within: find.byType(LicensePage));
-        expect(find.text('Find It'), findsAtLeastNWidgets(1));
+        expect(find.text('Seek More'), findsAtLeastNWidgets(1));
+        expect(find.text('Find It'), findsNothing);
         expect(find.text('FindIt'), findsNothing);
         expect(app.requests, isEmpty);
         expect(tester.takeException(), isNull);
@@ -150,7 +156,7 @@ void main() {
     try {
       await app.mount(tester);
       await app.go(tester, '/about');
-      expect(find.text('About Find It'), findsOneWidget);
+      expect(find.text('About Seek More'), findsOneWidget);
       expect(find.text('Version 1.0.0'), findsOneWidget);
       expect(find.text('Contact developer'), findsOneWidget);
       expect(find.text('Open-source licenses'), findsOneWidget);
@@ -193,40 +199,42 @@ void main() {
     }
   });
 
-  testWidgets('all player-facing routes use the spaced app name', (
-    tester,
-  ) async {
-    final app = await AppHarness.forTest(tester);
-    try {
-      await app.mount(tester);
-      for (final route in [
-        '/',
-        '/daily',
-        '/progress',
-        '/settings',
-        '/packs',
-        '/privacy',
-        '/about',
-      ]) {
-        await app.go(tester, route);
-        expect(
-          tester.widget<MaterialApp>(find.byType(MaterialApp)).title,
-          'Find It',
-          reason: route,
-        );
-        final text = tester
-            .widgetList<Text>(find.byType(Text))
-            .map((widget) => widget.data ?? '')
-            .join('\n');
-        expect(text, contains('Find It'), reason: route);
-        expect(text, isNot(contains('FindIt')), reason: route);
-        expect(tester.takeException(), isNull, reason: route);
+  testWidgets(
+    'all player-facing routes use Seek More without legacy branding',
+    (tester) async {
+      final app = await AppHarness.forTest(tester);
+      try {
+        await app.mount(tester);
+        for (final route in [
+          '/',
+          '/daily',
+          '/progress',
+          '/settings',
+          '/packs',
+          '/privacy',
+          '/about',
+        ]) {
+          await app.go(tester, route);
+          expect(
+            tester.widget<MaterialApp>(find.byType(MaterialApp)).title,
+            'Seek More',
+            reason: route,
+          );
+          final text = tester
+              .widgetList<Text>(find.byType(Text))
+              .map((widget) => widget.data ?? '')
+              .join('\n');
+          expect(text, contains('Seek More'), reason: route);
+          expect(text, isNot(contains('Find It')), reason: route);
+          expect(text, isNot(contains('FindIt')), reason: route);
+          expect(tester.takeException(), isNull, reason: route);
+        }
+        expect(app.requests, isEmpty);
+      } finally {
+        await app.close(tester);
       }
-      expect(app.requests, isEmpty);
-    } finally {
-      await app.close(tester);
-    }
-  });
+    },
+  );
 
   testWidgets('the included collection hides internal publisher tooling', (
     tester,

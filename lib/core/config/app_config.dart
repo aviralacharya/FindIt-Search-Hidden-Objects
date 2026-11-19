@@ -1,6 +1,7 @@
 abstract final class AppConfig {
-  static const name = 'Find It';
-  static const launcherName = 'Find It';
+  static const name = 'Seek More';
+  static const launcherName = 'Seek More';
+  static const playStoreTitle = 'Seek More: Hidden Objects Game';
   static const androidPackage = 'abiral.mobile.findit';
   static const iconAsset = 'assets/branding/app_icon.png';
   static const tagline = 'Little things. Wonderful places. Look closer.';

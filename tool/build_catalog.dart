@@ -24,7 +24,7 @@ void main() {
       'schemaVersion': 1,
       'contentVersion': 1,
       'packId': 'findit-hidden-originals-v1',
-      'license': 'Find It original vector artwork reused locally; three enhanced compositions created for Find It - Search Hidden Objects. See assets/legal/original-assets.txt.',
+      'license': 'Original vector artwork reused locally; three enhanced compositions created for Seek More. See assets/legal/original-assets.txt.',
       'puzzles': puzzles.map((p) => p.toJson()).toList(),
     }),
   );

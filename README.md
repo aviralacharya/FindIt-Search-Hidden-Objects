@@ -1,10 +1,10 @@
-# Find It
+# Seek More
 
-<img src="assets/branding/app_icon.png" alt="Find It magnifying-glass and golden-leaf app icon" width="96" height="96" />
+<img src="assets/branding/app_icon.png" alt="Seek More magnifying-glass and golden-leaf app icon" width="96" height="96" />
 
 *Little things. Wonderful places. Look closer.*
 
-Find It is an offline hidden-object game for Android. Explore colorful scenes, find hidden items, and earn rewards at your own pace.
+Seek More is an offline hidden-object game for Android. Explore colorful scenes, find hidden items, and earn rewards at your own pace.
 
 - **Version:** 1.0.0 (unreleased).
 - **Android:** 7.0 and later.
@@ -36,7 +36,7 @@ helpers are excluded from the public repository.
 
 ## Branding
 
-The installed app and in-app display name is **Find It**. Development and QA installers keep their identifying suffixes (**Find It Dev** and **Find It QA**). The Android package ID and local save namespace are unchanged.
+The app, launcher, and production installer display name is **Seek More**. The Google Play listing title is **Seek More: Hidden Objects Game**, recorded in `release/play-store/title.txt`. Development and QA installers keep their identifying suffixes (**Seek More Dev** and **Seek More QA**). The Android package ID, signing identity, and local save namespace are unchanged.
 
 The original logo is preserved in `assets/branding/icon_source.png`. The app, Android launcher and splash screens, web icons, and Play Store icon are generated from that image without stretching it.
 

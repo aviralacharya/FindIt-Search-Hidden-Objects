@@ -38,7 +38,7 @@ android {
     }
 
     defaultConfig {
-        // Separate from the original Find It app; publisher ownership is a release gate.
+        // Separate from the original app; publisher ownership is a release gate.
         applicationId = "abiral.mobile.findit"
         minSdk = 24
         targetSdk = 36
@@ -56,17 +56,17 @@ android {
             dimension = "environment"
             applicationIdSuffix = ".dev"
             versionNameSuffix = "-dev"
-            manifestPlaceholders["appLabel"] = "Find It Dev"
+            manifestPlaceholders["appLabel"] = "Seek More Dev"
         }
         create("qa") {
             dimension = "environment"
             applicationIdSuffix = ".qa"
             versionNameSuffix = "-qa"
-            manifestPlaceholders["appLabel"] = "Find It QA"
+            manifestPlaceholders["appLabel"] = "Seek More QA"
         }
         create("prod") {
             dimension = "environment"
-            manifestPlaceholders["appLabel"] = "Find It"
+            manifestPlaceholders["appLabel"] = "Seek More"
             // Public release evidence comes from the very same Dart defines
             // that the guarded Flutter build uses. No signing secrets go here.
             val config = dartConfiguration()
